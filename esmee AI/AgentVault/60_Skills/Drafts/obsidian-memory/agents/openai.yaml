@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obsidian Memory"
+  short_description: "Write audited Obsidian action memories"
+  default_prompt: "Use $obsidian-memory to create or update an audited Obsidian action memory."

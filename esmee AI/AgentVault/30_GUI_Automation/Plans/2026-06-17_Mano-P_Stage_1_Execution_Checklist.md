@@ -20,6 +20,8 @@ related_plan_review:
   - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-stage-1-plan-review_safety_result.md
 related_action_memory:
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_21-03_gui-自动化部_mano-p-stage-1-execution-checklist.md
+related_metadata_result:
+  - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Metadata_Query_Result.md
 requires_user_confirmation: true
 ---
 
@@ -31,7 +33,7 @@ requires_user_confirmation: true
 
 当前状态：
 
-- `homebrew_metadata_query_allowed`: no
+- `homebrew_metadata_query_completed`: yes
 - `brew_tap_allowed`: no
 - `brew_install_allowed`: no
 - `mano_cua_run_allowed`: no
@@ -42,6 +44,8 @@ requires_user_confirmation: true
 - `cloud_mode_allowed`: no
 
 工程部和安全部均已批准 Stage 1 计划作为文档计划，结论为 `approved_with_notes`。两部门共同要求先补命令白名单、风险分级、网络/缓存说明、执行记录模板和用户确认包。
+
+用户已确认并完成 Option B 元数据查询。结果显示 `mano-cua` 与 `Mininglamp-AI/tap` 已经在本机 Homebrew 中安装/存在；本轮未安装、未运行。
 
 ## 2. 官方信息摘要
 
@@ -258,7 +262,7 @@ next_step:
 推荐下一步：
 
 ```text
-等待用户确认是否进入 Option B：只查本机和 Homebrew 元数据。
+等待用户确认是否只读审查 Homebrew formula 内容和依赖树。
 ```
 
 在用户确认前，继续保持：

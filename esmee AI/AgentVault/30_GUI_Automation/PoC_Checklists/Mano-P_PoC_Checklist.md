@@ -21,6 +21,8 @@ related_plan_review:
   - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-stage-1-plan-review_summary.md
 related_execution_checklist:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Execution_Checklist.md
+related_metadata_result:
+  - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Metadata_Query_Result.md
 ---
 
 # Mano-P PoC Checklist
@@ -112,12 +114,13 @@ Stage 0 结果：
 
 当前状态：
 
-- `waiting_user_confirmation_for_metadata_query`
+- `metadata_query_completed_waiting_formula_review_confirmation`
 - 计划文件：`AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Isolated_Install_Plan.md`
 - 执行清单：`AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Execution_Checklist.md`
-- 已完成安装计划和执行清单；未克隆、未安装、未运行、未下载模型、未授予权限。
+- 元数据查询结果：`AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Metadata_Query_Result.md`
+- 已完成安装计划、执行清单和元数据查询；本轮未克隆、未安装、未运行、未下载模型、未授予权限。
 - 工程部和安全部均已只读审查，结论为 `approved_with_notes`。
-- 进入命令层前必须由用户明确确认是否允许 Option B：只查本机和 Homebrew 元数据。
+- 下一步如继续，只允许在用户确认后只读审查 formula 内容和依赖树。
 
 进入条件：
 

@@ -22,6 +22,8 @@ related_plan_review:
   - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-stage-1-plan-review_safety_result.md
 related_execution_checklist:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Execution_Checklist.md
+related_metadata_result:
+  - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Metadata_Query_Result.md
 related_action_memory:
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_19-50_gui-自动化部_mano-p-stage-1-install-plan.md
 notify_departments:
@@ -42,11 +44,11 @@ requires_user_confirmation: true
 
 - 工程部：`approved_with_notes`
 - 安全部：`approved_with_notes`
-- 总控结论：Stage 1 执行清单和用户确认包已补；下一步只能等待用户确认是否允许 Option B：只查本机和 Homebrew 元数据。
+- 总控结论：Stage 1 执行清单和用户确认包已补；Option B 元数据查询已完成，发现 `mano-cua` 和 `Mininglamp-AI/tap` 已预先安装/存在。下一步只能等待用户确认是否只读审查 formula 内容和依赖树。
 
 当前状态：
 
-- `stage_1_status`: waiting_user_confirmation_for_metadata_query
+- `stage_1_status`: metadata_query_completed_waiting_formula_review_confirmation
 - `clone_allowed`: no
 - `install_allowed`: no
 - `model_download_allowed`: no
@@ -324,6 +326,7 @@ AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Execution_Checklist
 当前状态：
 
 - 执行清单已创建。
-- 未执行任何命令。
+- Option B 元数据查询已完成。
+- 未执行 `brew tap`、`brew install`、`mano-cua`、`clawhub`、下载、权限授权或 GUI 自动化。
 - 未授权任何安装、下载、权限或 GUI 自动化。
-- 下一步等待用户确认是否允许只查元数据。
+- 下一步等待用户确认是否允许只读审查 Homebrew formula 内容和依赖树。

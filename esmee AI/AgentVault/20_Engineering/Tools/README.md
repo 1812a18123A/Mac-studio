@@ -84,6 +84,35 @@ python3 'esmee AI/AgentVault/20_Engineering/Tools/obsidian_action_memory_writer.
 python3 -m unittest discover -s 'esmee AI/AgentVault/20_Engineering/Tools' -p 'test_*.py'
 ```
 
+## 中文检索只读审计
+
+```bash
+python3 'esmee AI/AgentVault/20_Engineering/Tools/obsidian_chinese_retrieval_audit.py' \
+  --vault 'esmee AI' \
+  --root AgentVault \
+  --max-findings 80
+```
+
+审计脚本只报告缺失项，不修改文件。
+
+默认检查 4 个核心项：
+
+- 中文标题。
+- 中文摘要。
+- 中文检索词或检索元素。
+- 正文中的中文检索入口或中文检索索引。
+
+默认跳过私有、缓存、依赖和 GUI 产物目录，例如 `Private`、`.obsidian`、`.git`、`.external`、`node_modules`、`venv`、`screenshots`、`logs`。
+
+如需在 CI 或严格门禁中使用：
+
+```bash
+python3 'esmee AI/AgentVault/20_Engineering/Tools/obsidian_chinese_retrieval_audit.py' \
+  --vault 'esmee AI' \
+  --root AgentVault \
+  --fail-on-findings
+```
+
 ## 边界
 
 - 不安装 Obsidian 插件。

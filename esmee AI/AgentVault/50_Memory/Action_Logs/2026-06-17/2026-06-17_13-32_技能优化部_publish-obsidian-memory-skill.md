@@ -7,6 +7,44 @@ task_id: publish-obsidian-memory-skill
 status: completed
 risk_level: low
 current_mode: 坤-兑
+chinese_title: 发布 obsidian-memory 到 vault 内 best_skill
+中文标题: 发布 obsidian-memory 到 vault 内 best_skill
+summary_zh: 记录将已验证的 obsidian-memory 草案发布到 AgentVault Published 目录，创建 best_skill.md，并验证 Draft 与 Published 内容一致且未同步全局 Codex skills。
+中文摘要: 记录将已验证的 obsidian-memory 草案发布到 AgentVault Published 目录，创建 best_skill.md，并验证 Draft 与 Published 内容一致且未同步全局 Codex skills。
+directory_zh: 记忆库 / 行动日志 / 2026年06月17日
+目录中文路径: 记忆库 / 行动日志 / 2026年06月17日
+file_time_zh: 2026年06月17日 13点32分
+文件时间中文: 2026年06月17日 13点32分
+年份中文: 2026年
+月份中文: 06月
+日期中文: 17日
+时段中文: 下午
+status_zh: 已完成
+状态中文: 已完成
+risk_level_zh: 低
+风险中文: 低
+aliases:
+  - obsidian-memory发布
+  - best_skill发布
+  - vault内skill发布
+search_keywords:
+  - obsidian-memory
+  - best_skill
+  - Published
+  - Draft
+  - skill发布
+  - cmp一致
+  - 未同步全局
+  - quick_validate
+检索元素:
+  - obsidian-memory
+  - best_skill
+  - Published
+  - Draft
+  - skill发布
+  - cmp一致
+  - 未同步全局
+  - quick_validate
 related_skills:
   - skill-creator
   - obsidian-memory
@@ -23,6 +61,15 @@ requires_user_confirmation: false
 ---
 
 # 行动记忆：发布 obsidian-memory best_skill
+
+## 中文检索索引
+
+- 中文标题：发布 obsidian-memory 到 vault 内 best_skill
+- 中文摘要：记录将已验证的 obsidian-memory 草案发布到 AgentVault Published 目录，创建 best_skill.md，并验证 Draft 与 Published 内容一致且未同步全局 Codex skills。
+- 中文目录：记忆库 / 行动日志 / 2026年06月17日
+- 中文时间：2026年06月17日 13点32分，下午。
+- 相关部门：技能优化部、记忆部、工程部。
+- 中文关键词：obsidian-memory、best_skill、Published、Draft、skill 发布、cmp 一致、未同步全局、quick_validate。
 
 ## 1. 用户目标
 

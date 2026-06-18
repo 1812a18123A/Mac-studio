@@ -7,6 +7,44 @@ task_id: global-install-precheck-obsidian-memory
 status: completed
 risk_level: medium
 current_mode: 艮-兑
+chinese_title: obsidian-memory 全局安装前检查
+中文标题: obsidian-memory 全局安装前检查
+summary_zh: 记录安装 obsidian-memory 到全局 Codex skills 前的只读检查，确认 CODEX_HOME、全局 skills 目录、无同名覆盖、Draft 与 Published 一致和 writer 测试通过。
+中文摘要: 记录安装 obsidian-memory 到全局 Codex skills 前的只读检查，确认 CODEX_HOME、全局 skills 目录、无同名覆盖、Draft 与 Published 一致和 writer 测试通过。
+directory_zh: 记忆库 / 行动日志 / 2026年06月17日
+目录中文路径: 记忆库 / 行动日志 / 2026年06月17日
+file_time_zh: 2026年06月17日 14点11分
+文件时间中文: 2026年06月17日 14点11分
+年份中文: 2026年
+月份中文: 06月
+日期中文: 17日
+时段中文: 下午
+status_zh: 已完成
+状态中文: 已完成
+risk_level_zh: 中
+风险中文: 中
+aliases:
+  - 全局安装前检查
+  - CODEX_HOME预检
+  - obsidian-memory全局预检
+search_keywords:
+  - obsidian-memory
+  - 全局安装
+  - 安装前检查
+  - CODEX_HOME
+  - 全局skills
+  - 无同名覆盖
+  - 等待确认
+  - writer测试
+检索元素:
+  - obsidian-memory
+  - 全局安装
+  - 安装前检查
+  - CODEX_HOME
+  - 全局skills
+  - 无同名覆盖
+  - 等待确认
+  - writer测试
 related_skills:
   - skill-creator
   - obsidian-memory
@@ -25,6 +63,15 @@ requires_user_confirmation: false
 ---
 
 # 行动记忆：obsidian-memory 全局安装前检查
+
+## 中文检索索引
+
+- 中文标题：obsidian-memory 全局安装前检查
+- 中文摘要：记录安装 obsidian-memory 到全局 Codex skills 前的只读检查，确认 CODEX_HOME、全局 skills 目录、无同名覆盖、Draft 与 Published 一致和 writer 测试通过。
+- 中文目录：记忆库 / 行动日志 / 2026年06月17日
+- 中文时间：2026年06月17日 14点11分，下午。
+- 相关部门：技能优化部、安全部、工程部、记忆部。
+- 中文关键词：obsidian-memory、全局安装、安装前检查、CODEX_HOME、全局 skills、无同名覆盖、等待确认、writer 测试。
 
 ## 1. 用户目标
 

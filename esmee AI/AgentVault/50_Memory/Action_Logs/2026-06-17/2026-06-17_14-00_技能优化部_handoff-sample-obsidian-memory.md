@@ -7,6 +7,44 @@ task_id: handoff-sample-obsidian-memory
 status: completed
 risk_level: low
 current_mode: 坤-兑
+chinese_title: obsidian-memory 跨部门交接样本验证
+中文标题: obsidian-memory 跨部门交接样本验证
+summary_zh: 记录创建 obsidian-memory 跨部门交接样本、补充 Department Handoff 最小模板、验证 Draft 与 Published 一致、writer 测试和 skill 校验。
+中文摘要: 记录创建 obsidian-memory 跨部门交接样本、补充 Department Handoff 最小模板、验证 Draft 与 Published 一致、writer 测试和 skill 校验。
+directory_zh: 记忆库 / 行动日志 / 2026年06月17日
+目录中文路径: 记忆库 / 行动日志 / 2026年06月17日
+file_time_zh: 2026年06月17日 14点00分
+文件时间中文: 2026年06月17日 14点00分
+年份中文: 2026年
+月份中文: 06月
+日期中文: 17日
+时段中文: 下午
+status_zh: 已完成
+状态中文: 已完成
+risk_level_zh: 低
+风险中文: 低
+aliases:
+  - 跨部门交接样本
+  - Department Handoff模板
+  - obsidian-memory交接验证
+search_keywords:
+  - obsidian-memory
+  - 跨部门交接
+  - Department Handoff
+  - 交接样本
+  - handoff模板
+  - Draft
+  - Published
+  - writer测试
+检索元素:
+  - obsidian-memory
+  - 跨部门交接
+  - Department Handoff
+  - 交接样本
+  - handoff模板
+  - Draft
+  - Published
+  - writer测试
 related_skills:
   - obsidian-memory
 related_plugins:
@@ -22,6 +60,15 @@ requires_user_confirmation: false
 ---
 
 # 行动记忆：跨部门交接样本验证 obsidian-memory
+
+## 中文检索索引
+
+- 中文标题：obsidian-memory 跨部门交接样本验证
+- 中文摘要：记录创建 obsidian-memory 跨部门交接样本、补充 Department Handoff 最小模板、验证 Draft 与 Published 一致、writer 测试和 skill 校验。
+- 中文目录：记忆库 / 行动日志 / 2026年06月17日
+- 中文时间：2026年06月17日 14点00分，下午。
+- 相关部门：技能优化部、记忆部、工程部。
+- 中文关键词：obsidian-memory、跨部门交接、Department Handoff、交接样本、handoff 模板、Draft、Published、writer 测试。
 
 ## 1. 用户目标
 

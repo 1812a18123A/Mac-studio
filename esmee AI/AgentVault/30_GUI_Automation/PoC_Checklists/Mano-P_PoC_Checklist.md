@@ -13,6 +13,8 @@ related_reference:
 related_action_memory:
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_18-46_总控办公室_discuss-mano-p-integration.md
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_18-58_总控办公室_create-mano-p-reference-poc-docs.md
+related_reuse_check:
+  - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_0_Reuse_Check.md
 ---
 
 # Mano-P PoC Checklist
@@ -75,8 +77,8 @@ PoC 不验证：
 
 允许：
 
-- [ ] 读取 README、LICENSE、安装说明、examples、issues。
-- [ ] 写复用检查报告。
+- [x] 读取 README、LICENSE、安装说明、examples、issues。
+- [x] 写复用检查报告。
 - [ ] 写风险边界和最小 adapter 草案。
 
 禁止：
@@ -89,10 +91,16 @@ PoC 不验证：
 
 通过标准：
 
-- [ ] 明确可运行入口。
-- [ ] 明确 local/cloud 模式差异。
+- [x] 明确可运行入口。
+- [x] 明确 local/cloud 模式差异。
 - [ ] 明确依赖和硬件要求。
 - [ ] 明确 license 和 attribution 风险。
+
+Stage 0 结果：
+
+- `passed_with_conditions`
+- 复用检查报告：`AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_0_Reuse_Check.md`
+- 下一步只允许写 Stage 1 计划；不允许直接克隆、安装、运行或 GUI 自动化。
 
 ### Stage 1: 隔离安装验证
 

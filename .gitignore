@@ -1,2 +1,8 @@
 .DS_Store
 **/.DS_Store
+
+# Local Obsidian UI state and private top-level vault content.
+esmee AI/.obsidian/
+esmee AI/*.md
+esmee AI/*.docx
+esmee AI/行动记忆/

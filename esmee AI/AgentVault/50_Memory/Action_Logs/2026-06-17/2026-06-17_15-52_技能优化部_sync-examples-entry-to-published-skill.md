@@ -7,6 +7,44 @@ task_id: sync-examples-entry-to-published-skill
 status: completed
 risk_level: medium
 current_mode: 坤-兑
+chinese_title: 同步 obsidian-memory 示例入口到 published best_skill
+中文标题: 同步 obsidian-memory 示例入口到 published best_skill
+summary_zh: 记录技能优化部把 Failure And Handoff Examples 渐进披露入口同步到 vault 内 Published best_skill.md，与 draft 入口对齐，但不修改全局 skill。
+中文摘要: 记录技能优化部把 Failure And Handoff Examples 渐进披露入口同步到 vault 内 Published best_skill.md，与 draft 入口对齐，但不修改全局 skill。
+directory_zh: 记忆库 / 行动日志 / 2026年06月17日
+目录中文路径: 记忆库 / 行动日志 / 2026年06月17日
+file_time_zh: 2026年06月17日 15点52分
+文件时间中文: 2026年06月17日 15点52分
+年份中文: 2026年
+月份中文: 06月
+日期中文: 17日
+时段中文: 下午
+status_zh: 已完成
+状态中文: 已完成
+risk_level_zh: 中
+风险中文: 中
+aliases:
+  - obsidian-memory published示例入口
+  - published best_skill示例同步
+  - draft与published入口对齐
+search_keywords:
+  - obsidian-memory
+  - published best_skill
+  - 示例入口同步
+  - Failure And Handoff Examples
+  - Draft对齐
+  - 不修改全局
+  - quick_validate
+  - 坎-艮-兑
+检索元素:
+  - obsidian-memory
+  - published best_skill
+  - 示例入口同步
+  - Failure And Handoff Examples
+  - Draft对齐
+  - 不修改全局
+  - quick_validate
+  - 坎-艮-兑
 related_skills:
   - obsidian-memory
 related_plugins:
@@ -25,6 +63,15 @@ requires_user_confirmation: false
 ---
 
 # 行动记忆：同步 obsidian-memory 示例入口到 published best_skill
+
+## 中文检索索引
+
+- 中文标题：同步 obsidian-memory 示例入口到 published best_skill
+- 中文摘要：记录技能优化部把 Failure And Handoff Examples 渐进披露入口同步到 vault 内 Published best_skill.md，与 draft 入口对齐，但不修改全局 skill。
+- 中文目录：记忆库 / 行动日志 / 2026年06月17日
+- 中文时间：2026年06月17日 15点52分，下午。
+- 相关部门：技能优化部、记忆部、安全部、工程部、总控办公室。
+- 中文关键词：obsidian-memory、published best_skill、示例入口同步、Failure And Handoff Examples、Draft 对齐、不修改全局、quick_validate、坎-艮-兑。
 
 ## 1. 用户目标
 

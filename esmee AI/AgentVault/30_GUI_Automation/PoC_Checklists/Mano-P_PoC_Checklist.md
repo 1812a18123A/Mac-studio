@@ -29,6 +29,8 @@ related_python_source_review:
   - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Python_Source_Review.md
 related_runtime_gate_plan:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Runtime_Gate_Plan.md
+related_runtime_gate_review:
+  - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-runtime-gate-review_summary.md
 ---
 
 # Mano-P PoC Checklist
@@ -120,16 +122,17 @@ Stage 0 结果：
 
 当前状态：
 
-- `runtime_gate_plan_completed_waiting_review_or_help_candidate_confirmation`
+- `runtime_gate_review_completed_waiting_help_only_candidate_package_confirmation`
 - 计划文件：`AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Isolated_Install_Plan.md`
 - 执行清单：`AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Execution_Checklist.md`
 - 元数据查询结果：`AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Metadata_Query_Result.md`
 - formula/dependency 审查结果：`AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Formula_Dependency_Review.md`
 - Python source 审查结果：`AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Python_Source_Review.md`
 - Runtime gate plan：`AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Runtime_Gate_Plan.md`
-- 已完成安装计划、执行清单、元数据查询、formula/dependency 审查、Python source 审查和 runtime gate plan；本轮未克隆、未安装、未运行、未下载模型、未授予权限。
+- Runtime gate review：`AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-runtime-gate-review_summary.md`
+- 已完成安装计划、执行清单、元数据查询、formula/dependency 审查、Python source 审查、runtime gate plan 和部门复审；本轮未克隆、未安装、未运行、未下载模型、未授予权限。
 - 工程部和安全部均已只读审查，结论为 `approved_with_notes`。
-- 下一步如继续，只允许部门复审 runtime gate plan，或准备 help-only runtime 候选包；仍不允许直接运行 `mano-cua`。
+- 下一步如继续，只允许准备 help-only runtime 候选包；仍不允许直接运行 `mano-cua`。
 
 进入条件：
 

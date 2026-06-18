@@ -6,6 +6,32 @@ owner_department: GUI 自动化部
 status: completed
 risk_level: high
 current_mode: 坤-坎-兑
+chinese_title: Mano-P Stage 1 Python 源码审查
+中文标题: Mano-P Stage 1 Python 源码审查
+summary_zh: 记录 Mano-P Python requirements、entrypoint、cloud/local mode、截图、GUI 控制、config 读取和 runtime gate 必要性的只读审查结论。
+中文摘要: 记录 Mano-P Python requirements、entrypoint、cloud/local mode、截图、GUI 控制、config 读取和 runtime gate 必要性的只读审查结论。
+aliases:
+  - Mano-P源码审查
+  - Python源码安全审查
+  - Mano-P runtime风险审查
+search_keywords:
+  - Mano-P
+  - Python源码
+  - requirements
+  - cloud mode
+  - local mode
+  - 截图
+  - GUI控制
+  - runtime gate
+检索元素:
+  - Mano-P
+  - Python源码
+  - requirements
+  - cloud mode
+  - local mode
+  - 截图
+  - GUI控制
+  - runtime gate
 related_formula_review:
   - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Formula_Dependency_Review.md
 related_execution_checklist:
@@ -20,6 +46,13 @@ requires_user_confirmation_for_next_step: true
 ---
 
 # Mano-P Stage 1 Python Source Review
+
+## 中文检索索引
+
+- 中文标题：Mano-P Stage 1 Python 源码审查
+- 中文摘要：记录 Mano-P Python requirements、entrypoint、cloud/local mode、截图、GUI 控制、config 读取和 runtime gate 必要性的只读审查结论。
+- 相关部门：GUI 自动化部、工程部、安全部、记忆部。
+- 中文关键词：Mano-P、Python 源码、requirements、cloud mode、local mode、截图、GUI 控制、runtime gate。
 
 ## 1. 执行边界
 

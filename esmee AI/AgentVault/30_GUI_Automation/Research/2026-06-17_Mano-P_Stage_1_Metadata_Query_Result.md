@@ -6,6 +6,32 @@ owner_department: GUI 自动化部
 status: completed
 risk_level: medium
 current_mode: 坤-兑
+chinese_title: Mano-P Stage 1 元数据查询结果
+中文标题: Mano-P Stage 1 元数据查询结果
+summary_zh: 记录用户确认的本机和 Homebrew 元数据查询结果，确认 mano-cua 与 Mininglamp-AI tap 已存在，并明确未安装、未运行、未授权 GUI 或 cloud mode。
+中文摘要: 记录用户确认的本机和 Homebrew 元数据查询结果，确认 mano-cua 与 Mininglamp-AI tap 已存在，并明确未安装、未运行、未授权 GUI 或 cloud mode。
+aliases:
+  - Mano-P元数据查询
+  - Homebrew元数据结果
+  - mano-cua已安装查询
+search_keywords:
+  - Mano-P
+  - 元数据查询
+  - Homebrew
+  - mano-cua
+  - Mininglamp-AI tap
+  - 已安装
+  - 未运行
+  - 禁止GUI
+检索元素:
+  - Mano-P
+  - 元数据查询
+  - Homebrew
+  - mano-cua
+  - Mininglamp-AI tap
+  - 已安装
+  - 未运行
+  - 禁止GUI
 related_execution_checklist:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Execution_Checklist.md
 related_install_plan:
@@ -16,6 +42,13 @@ requires_user_confirmation_for_next_step: true
 ---
 
 # Mano-P Stage 1 Metadata Query Result
+
+## 中文检索索引
+
+- 中文标题：Mano-P Stage 1 元数据查询结果
+- 中文摘要：记录用户确认的本机和 Homebrew 元数据查询结果，确认 mano-cua 与 Mininglamp-AI tap 已存在，并明确未安装、未运行、未授权 GUI 或 cloud mode。
+- 相关部门：GUI 自动化部、工程部、安全部、记忆部。
+- 中文关键词：Mano-P、元数据查询、Homebrew、mano-cua、Mininglamp-AI tap、已安装、未运行、禁止 GUI。
 
 ## 1. 执行边界
 

@@ -6,6 +6,32 @@ owner_department: GUI 自动化部
 status: completed
 risk_level: medium
 current_mode: 坤-坎-兑
+chinese_title: Mano-P Stage 1 formula 依赖审查
+中文标题: Mano-P Stage 1 formula 依赖审查
+summary_zh: 记录 Mano-P Homebrew formula、依赖树、pip requirements 风险、wrapper 读取 config 行为和运行前必须继续源代码审查的判断。
+中文摘要: 记录 Mano-P Homebrew formula、依赖树、pip requirements 风险、wrapper 读取 config 行为和运行前必须继续源代码审查的判断。
+aliases:
+  - Mano-P formula审查
+  - Homebrew依赖审查
+  - Mano-P依赖风险
+search_keywords:
+  - Mano-P
+  - formula
+  - Homebrew
+  - 依赖审查
+  - requirements
+  - wrapper
+  - config读取
+  - runtime禁止
+检索元素:
+  - Mano-P
+  - formula
+  - Homebrew
+  - 依赖审查
+  - requirements
+  - wrapper
+  - config读取
+  - runtime禁止
 related_execution_checklist:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Execution_Checklist.md
 related_install_plan:
@@ -20,6 +46,13 @@ requires_user_confirmation_for_next_step: true
 ---
 
 # Mano-P Stage 1 Formula Dependency Review
+
+## 中文检索索引
+
+- 中文标题：Mano-P Stage 1 formula 依赖审查
+- 中文摘要：记录 Mano-P Homebrew formula、依赖树、pip requirements 风险、wrapper 读取 config 行为和运行前必须继续源代码审查的判断。
+- 相关部门：GUI 自动化部、工程部、安全部、记忆部。
+- 中文关键词：Mano-P、formula、Homebrew、依赖审查、requirements、wrapper、config 读取、runtime 禁止。
 
 ## 1. 执行边界
 

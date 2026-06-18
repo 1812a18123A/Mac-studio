@@ -7,6 +7,44 @@ task_id: post-restart-obsidian-memory-check
 status: completed
 risk_level: low
 current_mode: 坤-兑
+chinese_title: 重启后验收 obsidian-memory 全局 skill
+中文标题: 重启后验收 obsidian-memory 全局 skill
+summary_zh: 记录 Codex 重启后对 obsidian-memory 全局 skill 的文件存在、quick_validate、writer unittest 和 uri 命令可用性验收。
+中文摘要: 记录 Codex 重启后对 obsidian-memory 全局 skill 的文件存在、quick_validate、writer unittest 和 uri 命令可用性验收。
+directory_zh: 记忆库 / 行动日志 / 2026年06月17日
+目录中文路径: 记忆库 / 行动日志 / 2026年06月17日
+file_time_zh: 2026年06月17日 14点33分
+文件时间中文: 2026年06月17日 14点33分
+年份中文: 2026年
+月份中文: 06月
+日期中文: 17日
+时段中文: 下午
+status_zh: 已完成
+状态中文: 已完成
+risk_level_zh: 低
+风险中文: 低
+aliases:
+  - obsidian-memory重启验收
+  - 全局skill验收
+  - 重启后skill检查
+search_keywords:
+  - obsidian-memory
+  - 重启后验收
+  - 全局skill
+  - quick_validate
+  - writer unittest
+  - uri命令
+  - 文件存在
+  - 安装有效
+检索元素:
+  - obsidian-memory
+  - 重启后验收
+  - 全局skill
+  - quick_validate
+  - writer unittest
+  - uri命令
+  - 文件存在
+  - 安装有效
 related_skills:
   - obsidian-memory
 related_plugins:
@@ -22,6 +60,15 @@ requires_user_confirmation: false
 ---
 
 # 行动记忆：重启后验收 obsidian-memory 全局 skill
+
+## 中文检索索引
+
+- 中文标题：重启后验收 obsidian-memory 全局 skill
+- 中文摘要：记录 Codex 重启后对 obsidian-memory 全局 skill 的文件存在、quick_validate、writer unittest 和 uri 命令可用性验收。
+- 中文目录：记忆库 / 行动日志 / 2026年06月17日
+- 中文时间：2026年06月17日 14点33分，下午。
+- 相关部门：记忆部、技能优化部、工程部。
+- 中文关键词：obsidian-memory、重启后验收、全局 skill、quick_validate、writer unittest、uri 命令、文件存在、安装有效。
 
 ## 1. 用户目标
 

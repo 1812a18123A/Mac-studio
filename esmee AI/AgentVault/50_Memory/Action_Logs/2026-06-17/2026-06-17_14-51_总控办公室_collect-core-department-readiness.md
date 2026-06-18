@@ -7,6 +7,44 @@ task_id: collect-core-department-readiness
 status: completed
 risk_level: low
 current_mode: 坤-兑
+chinese_title: 收集核心部门 readiness
+中文标题: 收集核心部门 readiness
+summary_zh: 记录总控办公室收集第一批核心部门 readiness，确认总控办公室、工程部、记忆部均已就绪且未改代码、未安装依赖、未写全局目录。
+中文摘要: 记录总控办公室收集第一批核心部门 readiness，确认总控办公室、工程部、记忆部均已就绪且未改代码、未安装依赖、未写全局目录。
+directory_zh: 记忆库 / 行动日志 / 2026年06月17日
+目录中文路径: 记忆库 / 行动日志 / 2026年06月17日
+file_time_zh: 2026年06月17日 14点51分
+文件时间中文: 2026年06月17日 14点51分
+年份中文: 2026年
+月份中文: 06月
+日期中文: 17日
+时段中文: 下午
+status_zh: 已完成
+状态中文: 已完成
+risk_level_zh: 低
+风险中文: 低
+aliases:
+  - 核心部门readiness
+  - readiness汇总
+  - 核心部门就绪状态
+search_keywords:
+  - readiness
+  - 核心部门
+  - 总控办公室
+  - 工程部
+  - 记忆部
+  - 就绪汇总
+  - 未改代码
+  - 未安装依赖
+检索元素:
+  - readiness
+  - 核心部门
+  - 总控办公室
+  - 工程部
+  - 记忆部
+  - 就绪汇总
+  - 未改代码
+  - 未安装依赖
 related_skills:
   - obsidian-memory
 related_plugins:
@@ -22,6 +60,15 @@ requires_user_confirmation: false
 ---
 
 # 行动记忆：收集核心部门 readiness
+
+## 中文检索索引
+
+- 中文标题：收集核心部门 readiness
+- 中文摘要：记录总控办公室收集第一批核心部门 readiness，确认总控办公室、工程部、记忆部均已就绪且未改代码、未安装依赖、未写全局目录。
+- 中文目录：记忆库 / 行动日志 / 2026年06月17日
+- 中文时间：2026年06月17日 14点51分，下午。
+- 相关部门：总控办公室、工程部、记忆部。
+- 中文关键词：readiness、核心部门、总控办公室、工程部、记忆部、就绪汇总、未改代码、未安装依赖。
 
 ## 1. 用户目标
 

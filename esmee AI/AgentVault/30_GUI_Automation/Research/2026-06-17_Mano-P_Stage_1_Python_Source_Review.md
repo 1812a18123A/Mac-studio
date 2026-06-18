@@ -12,6 +12,8 @@ related_execution_checklist:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Execution_Checklist.md
 related_install_plan:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Isolated_Install_Plan.md
+related_runtime_gate_plan:
+  - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Runtime_Gate_Plan.md
 related_action_memory:
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_21-46_gui-自动化部_mano-p-python-source-review.md
 requires_user_confirmation_for_next_step: true
@@ -211,7 +213,7 @@ Decision:
 
 Stage 1 should not proceed directly to runtime.
 
-The next safe step is not to run `mano-cua`. The next safe step is to write a runtime gate plan.
+The next safe step was not to run `mano-cua`. The next safe step was to write a runtime gate plan, and that plan is now recorded.
 
 Minimum runtime gate plan should define:
 

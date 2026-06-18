@@ -26,6 +26,8 @@ related_formula_review:
   - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Formula_Dependency_Review.md
 related_python_source_review:
   - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Python_Source_Review.md
+related_runtime_gate_plan:
+  - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Runtime_Gate_Plan.md
 requires_user_confirmation: true
 ---
 
@@ -40,6 +42,7 @@ requires_user_confirmation: true
 - `homebrew_metadata_query_completed`: yes
 - `formula_dependency_review_completed`: yes
 - `python_source_review_completed`: yes
+- `runtime_gate_plan_completed`: yes
 - `brew_tap_allowed`: no
 - `brew_install_allowed`: no
 - `mano_cua_run_allowed`: no
@@ -56,6 +59,8 @@ requires_user_confirmation: true
 用户随后确认继续执行，只读完成 formula 内容和依赖树审查。审查发现 formula 会在安装阶段执行 `pip install -r requirements.txt`，因此 Homebrew dependency tree 不能覆盖真实 Python runtime dependency surface。下一步只能等待用户确认是否只读审查 `requirements.txt`、`visual/vla.py` 和相关 source entrypoint。
 
 用户再次确认继续执行后，已只读完成 Python requirements、entrypoint 和安全相关 source 审查。审查发现默认 `run` 使用 cloud mode，runtime 可截图、打开 app/url、执行鼠标键盘动作、使用 bash capability，并可能读取 `$HOME/.mano/config.json`。下一步不能直接运行；只能先写 runtime gate plan。
+
+用户继续确认下一步后，已完成 runtime gate plan。结论仍是 `runtime_allowed: no`；下一步只允许部门复审 gate plan，或在用户再次确认后准备 help-only runtime 候选包，不能直接执行。
 
 ## 2. 官方信息摘要
 
@@ -272,7 +277,7 @@ next_step:
 推荐下一步：
 
 ```text
-等待用户确认是否编写 runtime gate plan。
+等待用户确认是否让部门复审 runtime gate plan，或准备 help-only runtime 候选包。
 ```
 
 在用户确认前，继续保持：

@@ -8,6 +8,7 @@ risk_level: medium
 current_mode: 坤-兑
 related_action_memory:
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_17-14_总控办公室_implement-v0-2-repository-policy-workflow.md
+  - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_19-02_总控办公室_redact-thread-id-registry-forward-fix.md
 related_baseline:
   - AgentVault/00_System/Baselines/2026-06-17_Agent_OS_v0.1_Baseline.md
 related_departments:
@@ -44,6 +45,7 @@ related_departments:
 纳入前仍需检查：
 
 - 是否包含密钥、token、账号、隐私资料。
+- 是否包含真实 Codex thread id、pending worktree id、connector session id 等内部调度元数据。
 - 是否包含未经用户确认的外部资料。
 - 是否为当前任务需要的最小文件集合。
 - 是否已在行动记忆中记录原因和结果。
@@ -55,6 +57,7 @@ related_departments:
 - `.obsidian/`
 - vault 顶层 `*.md`
 - vault 顶层 `*.docx`
+- `AgentVault/00_System/Private/`
 - `行动记忆/`
 - `.DS_Store`
 
@@ -62,6 +65,7 @@ related_departments:
 
 - 顶层普通笔记可能包含私人想法、草稿或导入材料。
 - `.obsidian/` 可能包含本机窗口状态、插件状态和个人偏好。
+- `AgentVault/00_System/Private/` 用于本地运行时映射和内部调度元数据，例如真实 Codex thread id；不得提交或 push。
 - `行动记忆/` 是旧式或非 AgentVault 结构的本地资料；正式行动记忆应写入 `AgentVault/50_Memory/Action_Logs/`。
 
 ## 4. 例外流程
@@ -80,6 +84,7 @@ related_departments:
 
 - 是否只包含本次任务需要的文件。
 - 是否没有 `.obsidian/`、顶层普通笔记、docx 或旧式 `行动记忆/`。
+- 是否没有 `AgentVault/00_System/Private/` 或真实 Codex thread id 等内部调度元数据。
 - 是否没有密钥、token、截图、音频、客户资料或敏感日志。
 - 是否已更新行动记忆并记录实际结果。
 - 是否需要同步到远端；若要 push，先确认远端目标和分支。
@@ -92,4 +97,3 @@ related_departments:
 - 忽略本机 Obsidian UI 状态和顶层私人资料。
 - 不删除任何未跟踪文件。
 - 不改变 vault 内容结构，只改变 Git 收纳边界。
-

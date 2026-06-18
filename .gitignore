@@ -6,3 +6,6 @@ esmee AI/.obsidian/
 esmee AI/*.md
 esmee AI/*.docx
 esmee AI/行动记忆/
+
+# Local-only Agent OS runtime metadata.
+esmee AI/AgentVault/00_System/Private/

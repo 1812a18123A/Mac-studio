@@ -20,6 +20,8 @@ related_plan_review:
   - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-stage-1-plan-review_summary.md
   - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-stage-1-plan-review_engineering_result.md
   - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-stage-1-plan-review_safety_result.md
+related_execution_checklist:
+  - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Execution_Checklist.md
 related_action_memory:
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_19-50_gui-自动化部_mano-p-stage-1-install-plan.md
 notify_departments:
@@ -40,11 +42,11 @@ requires_user_confirmation: true
 
 - 工程部：`approved_with_notes`
 - 安全部：`approved_with_notes`
-- 总控结论：计划可继续完善，但执行前必须先补 Stage 1 执行清单和用户确认包。
+- 总控结论：Stage 1 执行清单和用户确认包已补；下一步只能等待用户确认是否允许 Option B：只查本机和 Homebrew 元数据。
 
 当前状态：
 
-- `stage_1_status`: needs_execution_checklist
+- `stage_1_status`: waiting_user_confirmation_for_metadata_query
 - `clone_allowed`: no
 - `install_allowed`: no
 - `model_download_allowed`: no
@@ -318,3 +320,10 @@ AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Execution_Checklist
 - 缓存、日志、模型输出和截图的默认不提交规则。
 - 清理与回退草案，且不得使用模糊或破坏性删除命令。
 - 用户确认包和立即停止条件。
+
+当前状态：
+
+- 执行清单已创建。
+- 未执行任何命令。
+- 未授权任何安装、下载、权限或 GUI 自动化。
+- 下一步等待用户确认是否允许只查元数据。

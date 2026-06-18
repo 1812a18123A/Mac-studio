@@ -7,6 +7,44 @@ task_id: skillopt-window-initialization
 status: completed
 risk_level: low
 current_mode: 坤-兑
+chinese_title: 技能优化部窗口初始化
+中文标题: 技能优化部窗口初始化
+summary_zh: 记录技能优化部初始化，读取创建链接、obsidian-memory 全局与草案/发布版本，判断当前 skill 可用且暂不需要创建新 skill 或修改实现。
+中文摘要: 记录技能优化部初始化，读取创建链接、obsidian-memory 全局与草案/发布版本，判断当前 skill 可用且暂不需要创建新 skill 或修改实现。
+directory_zh: 记忆库 / 行动日志 / 2026年06月17日
+目录中文路径: 记忆库 / 行动日志 / 2026年06月17日
+file_time_zh: 2026年06月17日 14点55分
+文件时间中文: 2026年06月17日 14点55分
+年份中文: 2026年
+月份中文: 06月
+日期中文: 17日
+时段中文: 下午
+status_zh: 已完成
+状态中文: 已完成
+risk_level_zh: 低
+风险中文: 低
+aliases:
+  - 技能优化部初始化
+  - SkillOpt窗口初始化
+  - obsidian-memory技能状态判断
+search_keywords:
+  - 技能优化部
+  - SkillOpt
+  - 初始化
+  - obsidian-memory
+  - skill状态
+  - frontmatter字段映射
+  - 部门路由示例
+  - 失败处理样例
+检索元素:
+  - 技能优化部
+  - SkillOpt
+  - 初始化
+  - obsidian-memory
+  - skill状态
+  - frontmatter字段映射
+  - 部门路由示例
+  - 失败处理样例
 related_skills:
   - none
 related_plugins:
@@ -19,6 +57,15 @@ requires_user_confirmation: false
 ---
 
 # 行动记忆：技能优化部窗口初始化
+
+## 中文检索索引
+
+- 中文标题：技能优化部窗口初始化
+- 中文摘要：记录技能优化部初始化，读取创建链接、obsidian-memory 全局与草案/发布版本，判断当前 skill 可用且暂不需要创建新 skill 或修改实现。
+- 中文目录：记忆库 / 行动日志 / 2026年06月17日
+- 中文时间：2026年06月17日 14点55分，下午。
+- 相关部门：技能优化部、总控办公室、记忆部。
+- 中文关键词：技能优化部、SkillOpt、初始化、obsidian-memory、skill 状态、frontmatter 字段映射、部门路由示例、失败处理样例。
 
 ## 1. 用户目标
 

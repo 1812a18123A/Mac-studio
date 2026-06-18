@@ -26,6 +26,31 @@ Operational metadata:
 6. When the task is done, use `set-status` to update frontmatter fields such as `status` and `current_mode`.
 7. If the task crosses departments, create a department handoff note.
 
+## Chinese-first Retrieval
+
+Memory records must be searchable primarily in Chinese.
+
+For every new or substantially updated memory, include Chinese-first retrieval content near the top:
+- Chinese title.
+- Chinese summary.
+- Chinese aliases.
+- Chinese search keywords.
+- Chinese next step.
+- Chinese department names.
+
+Recommended frontmatter fields:
+
+```yaml
+chinese_title:
+aliases:
+  - 中文别名
+search_keywords:
+  - 中文关键词
+summary_zh:
+```
+
+English task ids, command names, repository names, API names, and original source text may remain in English, but add nearby Chinese explanation for search. Do not mass-rename historical files; when an old memory is touched again, add Chinese aliases, keywords, or summary instead.
+
 Use current-mode labels:
 - `乾`: planning
 - `坤`: memory/archive
@@ -142,6 +167,7 @@ Include these sections in every action memory:
 - New or updated files
 - Next step
 - Short user-facing report
+- Chinese title, Chinese aliases, Chinese search keywords, and Chinese summary for retrieval.
 
 ## Safety Boundaries
 

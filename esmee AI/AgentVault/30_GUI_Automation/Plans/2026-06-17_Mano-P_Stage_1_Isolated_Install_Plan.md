@@ -32,6 +32,8 @@ related_runtime_gate_plan:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Runtime_Gate_Plan.md
 related_runtime_gate_review:
   - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-runtime-gate-review_summary.md
+related_help_only_candidate_package:
+  - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Help_Only_Runtime_Candidate_Package.md
 related_action_memory:
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_19-50_gui-自动化部_mano-p-stage-1-install-plan.md
 notify_departments:
@@ -52,11 +54,11 @@ requires_user_confirmation: true
 
 - 工程部：`approved_with_notes`
 - 安全部：`approved_with_notes`
-- 总控结论：Stage 1 执行清单和用户确认包已补；Option B 元数据查询、formula/dependency 审查、Python source 审查、runtime gate plan 和部门复审均已完成。安全部与工程部均为 `approved_with_notes`，允许准备 help-only runtime 候选包，但仍不允许执行。
+- 总控结论：Stage 1 执行清单和用户确认包已补；Option B 元数据查询、formula/dependency 审查、Python source 审查、runtime gate plan、部门复审和 help-only runtime 候选包均已完成。仍不允许执行；下一步只能复审候选包或准备执行前确认包。
 
 当前状态：
 
-- `stage_1_status`: runtime_gate_review_completed_waiting_help_only_candidate_package_confirmation
+- `stage_1_status`: help_only_candidate_package_prepared_waiting_review_or_execution_confirmation_package
 - `clone_allowed`: no
 - `install_allowed`: no
 - `model_download_allowed`: no

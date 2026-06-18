@@ -30,6 +30,8 @@ related_runtime_gate_plan:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Runtime_Gate_Plan.md
 related_runtime_gate_review:
   - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-runtime-gate-review_summary.md
+related_help_only_candidate_package:
+  - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Help_Only_Runtime_Candidate_Package.md
 requires_user_confirmation: true
 ---
 
@@ -47,6 +49,7 @@ requires_user_confirmation: true
 - `runtime_gate_plan_completed`: yes
 - `runtime_gate_review_completed`: yes
 - `help_only_candidate_package_allowed`: yes_with_notes
+- `help_only_candidate_package_prepared`: yes
 - `brew_tap_allowed`: no
 - `brew_install_allowed`: no
 - `mano_cua_run_allowed`: no
@@ -67,6 +70,8 @@ requires_user_confirmation: true
 用户继续确认下一步后，已完成 runtime gate plan。结论仍是 `runtime_allowed: no`；下一步只允许部门复审 gate plan，或在用户再次确认后准备 help-only runtime 候选包，不能直接执行。
 
 安全部和工程部已真实线程复审 runtime gate plan，结论均为 `approved_with_notes`。共同批准进入“准备 help-only runtime 候选包”，但仍不批准执行 `mano-cua --help`。
+
+Help-only runtime 候选包已准备完成。它定义了 exact binary、clean HOME、`env -i`、Python timeout runner 规范、expected writes、pre/post verification、输出脱敏和停止条件；当前仍不授权执行。
 
 ## 2. 官方信息摘要
 
@@ -283,7 +288,7 @@ next_step:
 推荐下一步：
 
 ```text
-等待用户确认是否准备 help-only runtime 候选包。
+等待用户确认是否复审 help-only runtime 候选包。
 ```
 
 在用户确认前，继续保持：

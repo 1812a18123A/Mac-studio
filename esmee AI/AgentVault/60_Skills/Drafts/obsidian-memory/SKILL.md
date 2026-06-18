@@ -35,6 +35,9 @@ For every new or substantially updated memory, include Chinese-first retrieval c
 - Chinese summary.
 - Chinese aliases.
 - Chinese search keywords.
+- Chinese directory path.
+- Chinese file elements.
+- Chinese time elements.
 - Chinese next step.
 - Chinese department names.
 
@@ -42,14 +45,30 @@ Recommended frontmatter fields:
 
 ```yaml
 chinese_title:
+中文标题:
 aliases:
   - 中文别名
 search_keywords:
   - 中文关键词
+检索元素:
+  - 中文关键词
 summary_zh:
+中文摘要:
+directory_zh:
+目录中文路径:
+file_time_zh:
+文件时间中文:
+年份中文:
+月份中文:
+日期中文:
+时段中文:
+status_zh:
+状态中文:
+risk_level_zh:
+风险中文:
 ```
 
-English task ids, command names, repository names, API names, and original source text may remain in English, but add nearby Chinese explanation for search. Do not mass-rename historical files; when an old memory is touched again, add Chinese aliases, keywords, or summary instead.
+Directory meanings, file elements, time elements, status, risk, departments, and next steps should be searchable in Chinese. English task ids, command names, repository names, API names, and original source text may remain in English, but add nearby Chinese explanation for search. Do not mass-rename historical files; when an old memory is touched again, add Chinese aliases, keywords, directory notes, time notes, or summary instead.
 
 Use current-mode labels:
 - `乾`: planning
@@ -167,7 +186,7 @@ Include these sections in every action memory:
 - New or updated files
 - Next step
 - Short user-facing report
-- Chinese title, Chinese aliases, Chinese search keywords, and Chinese summary for retrieval.
+- Chinese title, Chinese aliases, Chinese search keywords, Chinese directory path, Chinese file elements, Chinese time elements, and Chinese summary for retrieval.
 
 ## Safety Boundaries
 

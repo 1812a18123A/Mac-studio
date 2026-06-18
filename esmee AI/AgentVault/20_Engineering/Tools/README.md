@@ -27,6 +27,27 @@ python3 'esmee AI/AgentVault/20_Engineering/Tools/obsidian_action_memory_writer.
 - 新建的 Markdown 文件路径。
 - 对应的 `obsidian://open` URI。
 
+新建文件会自动写入中文检索元素：
+
+- `中文标题`
+- `中文摘要`
+- `目录中文路径`
+- `文件时间中文`
+- `年份中文`、`月份中文`、`日期中文`、`时段中文`
+- `状态中文`、`风险中文`
+- `检索元素`
+
+文件系统路径仍保持稳定，例如 `AgentVault/50_Memory/Action_Logs/YYYY-MM-DD/`；中文目录含义写入 frontmatter 和正文，避免改名导致 Obsidian 链接失效。
+
+可选参数：
+
+```bash
+--chinese-title '中文标题'
+--summary-zh '一句话中文摘要'
+--aliases '中文别名一,中文别名二'
+--search-keywords '中文关键词一,中文关键词二'
+```
+
 ## 追加行动日志
 
 ```bash

@@ -48,6 +48,10 @@ class ObsidianActionMemoryWriterTest(unittest.TestCase):
                 related_files="source.md",
                 notify="工程部",
                 requires_user_confirmation=False,
+                chinese_title="写入器中文测试",
+                summary_zh="验证行动记忆写入器会生成中文检索元素。",
+                aliases="中文写入器测试,行动记忆写入测试",
+                search_keywords="中文检索,中文时间,中文目录",
                 user_goal="测试创建行动记忆。",
                 action_goal="只验证最小写入。",
                 context="临时 vault。",
@@ -72,7 +76,19 @@ class ObsidianActionMemoryWriterTest(unittest.TestCase):
                 / "2026-06-17_12-45_记忆部_writer-test.md"
             )
             self.assertTrue(memory_file.exists())
-            self.assertIn("行动记忆：Writer Test", memory_file.read_text(encoding="utf-8"))
+            text = memory_file.read_text(encoding="utf-8")
+            self.assertIn("行动记忆：Writer Test", text)
+            self.assertIn("chinese_title: 写入器中文测试", text)
+            self.assertIn("中文标题: 写入器中文测试", text)
+            self.assertIn("summary_zh: 验证行动记忆写入器会生成中文检索元素。", text)
+            self.assertIn("目录中文路径: 记忆库 / 行动日志 / 2026年06月17日", text)
+            self.assertIn("文件时间中文: 2026年06月17日 12点45分", text)
+            self.assertIn("时段中文: 中午", text)
+            self.assertIn("状态中文: 计划中", text)
+            self.assertIn("风险中文: 低", text)
+            self.assertIn("  - 中文检索", text)
+            self.assertIn("## 0. 中文检索入口", text)
+            self.assertIn("中文文件元素：", text)
 
             with redirect_stdout(io.StringIO()):
                 writer.append_log(
@@ -98,6 +114,8 @@ class ObsidianActionMemoryWriterTest(unittest.TestCase):
                 )
             text = memory_file.read_text(encoding="utf-8")
             self.assertIn("status: completed", text)
+            self.assertIn("status_zh: 已完成", text)
+            self.assertIn("状态中文: 已完成", text)
             self.assertIn("current_mode: 坤-兑", text)
 
             uri = writer.obsidian_open_uri(

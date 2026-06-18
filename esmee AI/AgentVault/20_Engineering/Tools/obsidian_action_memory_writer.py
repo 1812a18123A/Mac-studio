@@ -17,6 +17,22 @@ from urllib.parse import quote
 DEFAULT_VAULT = Path(__file__).resolve().parents[3]
 ACTION_LOG_ROOT = Path("AgentVault/50_Memory/Action_Logs")
 
+STATUS_ZH = {
+    "planned": "计划中",
+    "in_progress": "进行中",
+    "completed": "已完成",
+    "waiting_user_confirmation": "等待用户确认",
+    "blocked": "已阻塞",
+    "failed": "失败",
+    "active": "生效",
+}
+
+RISK_ZH = {
+    "low": "低",
+    "medium": "中",
+    "high": "高",
+}
+
 
 def split_csv(value: Optional[str]) -> List[str]:
     if not value:
@@ -46,6 +62,46 @@ def yaml_list(items: Iterable[str]) -> str:
     if not values:
         return "  - none"
     return "\n".join(f"  - {item}" for item in values)
+
+
+def unique_items(items: Iterable[str]) -> List[str]:
+    seen = set()
+    unique = []
+    for item in items:
+        value = item.strip()
+        if value and value not in seen:
+            unique.append(value)
+            seen.add(value)
+    return unique
+
+
+def chinese_date(when: datetime) -> str:
+    return when.strftime("%Y年%m月%d日")
+
+
+def chinese_time(when: datetime) -> str:
+    return when.strftime("%Y年%m月%d日 %H点%M分")
+
+
+def chinese_time_period(when: datetime) -> str:
+    hour = when.hour
+    if hour < 6:
+        return "凌晨"
+    if hour < 12:
+        return "上午"
+    if hour < 14:
+        return "中午"
+    if hour < 18:
+        return "下午"
+    return "晚上"
+
+
+def status_zh(status: str) -> str:
+    return STATUS_ZH.get(status, status)
+
+
+def risk_zh(risk_level: str) -> str:
+    return RISK_ZH.get(risk_level, risk_level)
 
 
 def resolve_inside_vault(vault: Path, target: Path) -> Path:
@@ -78,12 +134,64 @@ def obsidian_open_uri(vault_name: str, vault_relative_file: str) -> str:
 
 def build_memory(args: argparse.Namespace, path: Path, when: datetime) -> str:
     title = args.title or args.task_id
+    title_zh = args.chinese_title or title
+    date_zh = chinese_date(when)
+    time_zh = chinese_time(when)
+    period_zh = chinese_time_period(when)
+    directory_zh = f"记忆库 / 行动日志 / {date_zh}"
+    status_label_zh = status_zh(args.status)
+    risk_label_zh = risk_zh(args.risk_level)
+    summary_zh = args.summary_zh or f"{args.department}行动记忆：{args.user_goal}"
+    aliases = unique_items(
+        split_csv(args.aliases)
+        or [
+            title_zh,
+            f"{args.department}{title_zh}",
+            f"{date_zh}{title_zh}",
+        ]
+    )
+    search_keywords = unique_items(
+        split_csv(args.search_keywords)
+        or [
+            "记忆库",
+            "行动记忆",
+            "行动日志",
+            args.department,
+            title_zh,
+            date_zh,
+            period_zh,
+            status_label_zh,
+            risk_label_zh,
+        ]
+    )
     return f"""---
 type: action_memory
 date: {when.strftime("%Y-%m-%d")}
 time: "{when.strftime("%H:%M")}"
 department: {args.department}
 task_id: {args.task_id}
+chinese_title: {title_zh}
+中文标题: {title_zh}
+summary_zh: {summary_zh}
+中文摘要: {summary_zh}
+directory_zh: {directory_zh}
+目录中文路径: {directory_zh}
+file_time_zh: {time_zh}
+文件时间中文: {time_zh}
+年份中文: {when.strftime("%Y年")}
+月份中文: {when.strftime("%m月")}
+日期中文: {when.strftime("%d日")}
+时段中文: {period_zh}
+status_zh: {status_label_zh}
+状态中文: {status_label_zh}
+risk_level_zh: {risk_label_zh}
+风险中文: {risk_label_zh}
+aliases:
+{yaml_list(aliases)}
+search_keywords:
+{yaml_list(search_keywords)}
+检索元素:
+{yaml_list(search_keywords)}
 status: {args.status}
 risk_level: {args.risk_level}
 current_mode: {args.current_mode}
@@ -99,6 +207,31 @@ requires_user_confirmation: {yaml_bool(args.requires_user_confirmation)}
 ---
 
 # 行动记忆：{title}
+
+## 0. 中文检索入口
+
+中文标题：
+- {title_zh}
+
+中文摘要：
+- {summary_zh}
+
+中文目录：
+- {directory_zh}
+
+中文时间：
+- {time_zh}
+- {period_zh}
+
+中文文件元素：
+- 记忆类型：行动记忆
+- 主责部门：{args.department}
+- 任务名称：{title_zh}
+- 任务状态：{status_label_zh}
+- 风险等级：{risk_label_zh}
+
+中文检索元素：
+{yaml_list(search_keywords)}
 
 ## 1. 用户目标
 
@@ -262,9 +395,13 @@ def set_status(args: argparse.Namespace) -> int:
     vault = Path(args.vault).expanduser().resolve()
     path = resolve_inside_vault(vault, Path(args.file))
     text = path.read_text(encoding="utf-8")
+    updates = {"status": args.status, "current_mode": args.current_mode}
+    if args.status is not None:
+        updates["status_zh"] = status_zh(args.status)
+        updates["状态中文"] = status_zh(args.status)
     updated = set_frontmatter_fields(
         text,
-        {"status": args.status, "current_mode": args.current_mode},
+        updates,
     )
     path.write_text(updated, encoding="utf-8")
     print(path)
@@ -296,6 +433,10 @@ def parser() -> argparse.ArgumentParser:
     create.add_argument("--related-files", default="")
     create.add_argument("--notify", default="")
     create.add_argument("--requires-user-confirmation", action="store_true")
+    create.add_argument("--chinese-title", default="")
+    create.add_argument("--summary-zh", default="")
+    create.add_argument("--aliases", default="")
+    create.add_argument("--search-keywords", default="")
     create.add_argument("--user-goal", default="待补充。")
     create.add_argument("--action-goal", default="待补充。")
     create.add_argument("--context", default="待补充。")

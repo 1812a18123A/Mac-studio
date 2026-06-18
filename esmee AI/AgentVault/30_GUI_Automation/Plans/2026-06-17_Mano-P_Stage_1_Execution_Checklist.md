@@ -22,6 +22,8 @@ related_action_memory:
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_21-03_gui-自动化部_mano-p-stage-1-execution-checklist.md
 related_metadata_result:
   - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Metadata_Query_Result.md
+related_formula_review:
+  - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Formula_Dependency_Review.md
 requires_user_confirmation: true
 ---
 
@@ -34,6 +36,7 @@ requires_user_confirmation: true
 当前状态：
 
 - `homebrew_metadata_query_completed`: yes
+- `formula_dependency_review_completed`: yes
 - `brew_tap_allowed`: no
 - `brew_install_allowed`: no
 - `mano_cua_run_allowed`: no
@@ -46,6 +49,8 @@ requires_user_confirmation: true
 工程部和安全部均已批准 Stage 1 计划作为文档计划，结论为 `approved_with_notes`。两部门共同要求先补命令白名单、风险分级、网络/缓存说明、执行记录模板和用户确认包。
 
 用户已确认并完成 Option B 元数据查询。结果显示 `mano-cua` 与 `Mininglamp-AI/tap` 已经在本机 Homebrew 中安装/存在；本轮未安装、未运行。
+
+用户随后确认继续执行，只读完成 formula 内容和依赖树审查。审查发现 formula 会在安装阶段执行 `pip install -r requirements.txt`，因此 Homebrew dependency tree 不能覆盖真实 Python runtime dependency surface。下一步只能等待用户确认是否只读审查 `requirements.txt`、`visual/vla.py` 和相关 source entrypoint。
 
 ## 2. 官方信息摘要
 
@@ -262,7 +267,7 @@ next_step:
 推荐下一步：
 
 ```text
-等待用户确认是否只读审查 Homebrew formula 内容和依赖树。
+等待用户确认是否只读审查 Python requirements 和 source entrypoint。
 ```
 
 在用户确认前，继续保持：

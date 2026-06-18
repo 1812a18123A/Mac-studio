@@ -7,6 +7,44 @@ task_id: apply-obsidian-memory-example-review-fixes
 status: completed
 risk_level: low
 current_mode: 坤-兑
+chinese_title: 修正 obsidian-memory 示例草稿审核建议
+中文标题: 修正 obsidian-memory 示例草稿审核建议
+summary_zh: 记录技能优化部应用记忆部和安全部审核建议，最小修正 examples_failure_and_handoff.md，补充失败记录字段、blocked 选择标准、高风险卦态、交接模板字段和结果回写追踪。
+中文摘要: 记录技能优化部应用记忆部和安全部审核建议，最小修正 examples_failure_and_handoff.md，补充失败记录字段、blocked 选择标准、高风险卦态、交接模板字段和结果回写追踪。
+directory_zh: 记忆库 / 行动日志 / 2026年06月17日
+目录中文路径: 记忆库 / 行动日志 / 2026年06月17日
+file_time_zh: 2026年06月17日 15点22分
+文件时间中文: 2026年06月17日 15点22分
+年份中文: 2026年
+月份中文: 06月
+日期中文: 17日
+时段中文: 下午
+status_zh: 已完成
+状态中文: 已完成
+risk_level_zh: 低
+风险中文: 低
+aliases:
+  - 示例草稿审核修复
+  - obsidian-memory示例小修
+  - 失败交接示例修复
+search_keywords:
+  - 技能优化部
+  - obsidian-memory
+  - 审核修复
+  - examples_failure_and_handoff
+  - failed与blocked
+  - 坎-艮-兑
+  - related_action_memory
+  - quick_validate
+检索元素:
+  - 技能优化部
+  - obsidian-memory
+  - 审核修复
+  - examples_failure_and_handoff
+  - failed与blocked
+  - 坎-艮-兑
+  - related_action_memory
+  - quick_validate
 related_skills:
   - obsidian-memory
 related_plugins:
@@ -24,6 +62,15 @@ requires_user_confirmation: false
 ---
 
 # 行动记忆：修正 obsidian-memory 示例草稿审核建议
+
+## 中文检索索引
+
+- 中文标题：修正 obsidian-memory 示例草稿审核建议
+- 中文摘要：记录技能优化部应用记忆部和安全部审核建议，最小修正 examples_failure_and_handoff.md，补充失败记录字段、blocked 选择标准、高风险卦态、交接模板字段和结果回写追踪。
+- 中文目录：记忆库 / 行动日志 / 2026年06月17日
+- 中文时间：2026年06月17日 15点22分，下午。
+- 相关部门：技能优化部、记忆部、安全部、总控办公室。
+- 中文关键词：技能优化部、obsidian-memory、审核修复、examples_failure_and_handoff、failed 与 blocked、坎-艮-兑、related_action_memory、quick_validate。
 
 ## 1. 用户目标
 

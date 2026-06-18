@@ -15,6 +15,8 @@ related_action_memory:
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_18-58_总控办公室_create-mano-p-reference-poc-docs.md
 related_reuse_check:
   - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_0_Reuse_Check.md
+related_install_plan:
+  - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Isolated_Install_Plan.md
 ---
 
 # Mano-P PoC Checklist
@@ -103,6 +105,12 @@ Stage 0 结果：
 - 下一步只允许写 Stage 1 计划；不允许直接克隆、安装、运行或 GUI 自动化。
 
 ### Stage 1: 隔离安装验证
+
+当前状态：
+
+- `planned_requires_confirmation`
+- 计划文件：`AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Isolated_Install_Plan.md`
+- 只完成安装计划；未克隆、未安装、未运行、未下载模型、未授予权限。
 
 进入条件：
 

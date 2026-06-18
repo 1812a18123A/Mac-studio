@@ -17,6 +17,8 @@ related_reuse_check:
   - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_0_Reuse_Check.md
 related_install_plan:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Isolated_Install_Plan.md
+related_plan_review:
+  - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-stage-1-plan-review_summary.md
 ---
 
 # Mano-P PoC Checklist
@@ -108,9 +110,11 @@ Stage 0 结果：
 
 当前状态：
 
-- `planned_requires_confirmation`
+- `needs_execution_checklist`
 - 计划文件：`AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Isolated_Install_Plan.md`
 - 只完成安装计划；未克隆、未安装、未运行、未下载模型、未授予权限。
+- 工程部和安全部均已只读审查，结论为 `approved_with_notes`。
+- 进入命令层前必须补 Stage 1 执行清单和用户确认包。
 
 进入条件：
 

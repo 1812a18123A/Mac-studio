@@ -16,6 +16,10 @@ related_reuse_check:
   - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_0_Reuse_Check.md
 related_checklist:
   - AgentVault/30_GUI_Automation/PoC_Checklists/Mano-P_PoC_Checklist.md
+related_plan_review:
+  - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-stage-1-plan-review_summary.md
+  - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-stage-1-plan-review_engineering_result.md
+  - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-stage-1-plan-review_safety_result.md
 related_action_memory:
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_19-50_gui-自动化部_mano-p-stage-1-install-plan.md
 notify_departments:
@@ -32,9 +36,15 @@ requires_user_confirmation: true
 
 本文件只是 Stage 1 隔离安装计划，不是执行授权。
 
+部门审查结果：
+
+- 工程部：`approved_with_notes`
+- 安全部：`approved_with_notes`
+- 总控结论：计划可继续完善，但执行前必须先补 Stage 1 执行清单和用户确认包。
+
 当前状态：
 
-- `stage_1_status`: waiting_user_confirmation
+- `stage_1_status`: needs_execution_checklist
 - `clone_allowed`: no
 - `install_allowed`: no
 - `model_download_allowed`: no
@@ -289,3 +299,22 @@ wait_user_confirmation
 ```text
 只允许查询元数据和写 Stage 1 执行计划；暂不允许 tap/install/run/model/permissions/gui。
 ```
+
+## 14. 部门审查后新增前置项
+
+在进入任何命令层之前，必须先新增：
+
+```text
+AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Execution_Checklist.md
+```
+
+该清单至少包含：
+
+- Homebrew 元数据查询命令白名单。
+- 每条命令是否联网、是否写缓存、是否触发 auto-update。
+- 命令风险分级：只读、会写状态、会下载、会请求权限、会 GUI 执行。
+- `.external/` 隔离目录的 `.gitignore` 方案。
+- Homebrew/tap/formula/package/Python/SDK/model/license 检查项。
+- 缓存、日志、模型输出和截图的默认不提交规则。
+- 清理与回退草案，且不得使用模糊或破坏性删除命令。
+- 用户确认包和立即停止条件。

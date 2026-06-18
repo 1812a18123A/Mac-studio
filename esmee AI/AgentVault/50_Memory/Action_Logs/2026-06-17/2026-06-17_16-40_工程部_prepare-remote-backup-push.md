@@ -4,9 +4,9 @@ date: 2026-06-17
 time: "16:40"
 department: 工程部
 task_id: prepare-remote-backup-push
-status: in_progress
+status: completed
 risk_level: medium
-current_mode: 乾-坎-兑
+current_mode: 坤-兑
 related_skills:
   - obsidian-memory
 related_plugins:
@@ -141,3 +141,15 @@ requires_user_confirmation: true
 ## Log 2026-06-17 16:45
 
 - 用户提供远端仓库：https://github.com/1812a18123A/Mac-studio。执行策略：先提交 tag 创建与 remote 准备相关行动记忆到 main，保持 agent-os-v0.1 tag 仍指向基线提交 bbda141；随后设置 origin 并 push main 与 tag。禁止纳入 .obsidian、普通笔记、docx 或 .DS_Store。
+
+## Log 2026-06-17 16:47
+
+- Push 尝试失败：git push -u origin main 返回 fatal: could not read Username for https://github.com: Device not configured。原因：浏览器 GitHub 登录态不能直接供 Git CLI 使用。未成功外发 main 或 tag。下一步：检查 gh auth 或改用 SSH remote / GitHub CLI 登录。
+
+## Log 2026-06-17 16:47
+
+- 认证检查结果：本机 command -v gh 无输出，gh auth status 不可用；find ~/.ssh -name *.pub 无输出；ssh -T git@github.com 返回 Host key verification failed。当前阻塞原因：没有可用的 GitHub CLI/HTTPS/SSH 认证链路。未 push main 或 tag。可选下一步：1) 用户提供 GitHub PAT 供 HTTPS push；2) 配置 SSH key 并把公钥加入 GitHub；3) 安装并登录 gh。
+
+## Log 2026-06-17 17:05
+
+- 后续完成结果：用户提供 GitHub 仓库 1812a18123A/Mac-studio 并完成 SSH key 授权后，origin 已切换至 SSH；main 分支成功推送并 tracking origin/main；agent-os-v0.1 tag 成功推送。远端备份目标已达成。

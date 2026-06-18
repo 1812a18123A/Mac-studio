@@ -34,6 +34,8 @@ related_help_only_candidate_package:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Help_Only_Runtime_Candidate_Package.md
 related_help_only_candidate_review:
   - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-help-only-candidate-review_summary.md
+related_execution_confirmation_package:
+  - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Help_Only_Execution_Confirmation_Package.md
 requires_user_confirmation: true
 ---
 
@@ -54,6 +56,7 @@ requires_user_confirmation: true
 - `help_only_candidate_package_prepared`: yes
 - `help_only_candidate_review_completed`: yes
 - `execution_confirmation_package_allowed`: yes_with_notes
+- `execution_confirmation_package_prepared`: yes
 - `brew_tap_allowed`: no
 - `brew_install_allowed`: no
 - `mano_cua_run_allowed`: no
@@ -78,6 +81,8 @@ requires_user_confirmation: true
 Help-only runtime 候选包已准备完成。它定义了 exact binary、clean HOME、`env -i`、Python timeout runner 规范、expected writes、pre/post verification、输出脱敏和停止条件；当前仍不授权执行。
 
 安全部、工程部和记忆部已真实线程复审 help-only runtime 候选包，结论均为 `approved_with_notes`。共同允许准备 help-only execution confirmation package；仍不允许执行 `mano-cua --help`、创建 runner 文件、截图、GUI、cloud/local、install/download/tap 或读取配置值。
+
+Help-only execution confirmation package 已准备完成。它明确声明“确认包仍不是执行授权”，只包含伪代码 runner 规范、clean HOME/RUN_CWD 生命周期、输出大小上限、脱敏策略、preflight/post-run checklist、四方确认字段和 stop conditions；当前仍不授权执行。
 
 ## 2. 官方信息摘要
 
@@ -294,7 +299,7 @@ next_step:
 推荐下一步：
 
 ```text
-准备 help-only execution confirmation package。
+复审 help-only execution confirmation package。
 ```
 
 在用户确认前，继续保持：

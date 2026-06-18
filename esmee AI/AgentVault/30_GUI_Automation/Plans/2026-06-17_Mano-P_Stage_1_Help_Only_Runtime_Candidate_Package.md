@@ -12,6 +12,8 @@ related_runtime_gate_review:
   - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-runtime-gate-review_summary.md
 related_candidate_review:
   - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-help-only-candidate-review_summary.md
+related_execution_confirmation_package:
+  - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Help_Only_Execution_Confirmation_Package.md
 related_python_source_review:
   - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Python_Source_Review.md
 related_action_memory:
@@ -30,6 +32,7 @@ requires_user_confirmation_for_next_step: true
 - `candidate_package_completed`: yes
 - `candidate_package_review_completed`: yes
 - `execution_confirmation_package_allowed`: yes_with_notes
+- `execution_confirmation_package_prepared`: yes
 - `runtime_allowed`: no
 - `mano_cua_help_allowed`: no
 - `candidate_execution_allowed`: no
@@ -44,7 +47,7 @@ requires_user_confirmation_for_next_step: true
 下一步只允许：
 
 ```text
-准备 help-only execution confirmation package。
+让安全部、工程部、记忆部复审 help-only execution confirmation package。
 ```
 
 仍然禁止：

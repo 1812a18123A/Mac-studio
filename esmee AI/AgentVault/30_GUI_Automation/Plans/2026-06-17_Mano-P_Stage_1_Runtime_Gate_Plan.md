@@ -24,6 +24,8 @@ related_help_only_candidate_package:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Help_Only_Runtime_Candidate_Package.md
 related_help_only_candidate_review:
   - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-help-only-candidate-review_summary.md
+related_execution_confirmation_package:
+  - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Help_Only_Execution_Confirmation_Package.md
 requires_user_confirmation_for_next_step: true
 ---
 
@@ -42,6 +44,7 @@ requires_user_confirmation_for_next_step: true
 - `help_only_candidate_package_prepared`: yes
 - `help_only_candidate_review_completed`: yes
 - `execution_confirmation_package_allowed`: yes_with_notes
+- `execution_confirmation_package_prepared`: yes
 - `mano_cua_check_allowed`: no
 - `mano_cua_run_allowed`: no
 - `cloud_mode_allowed`: no
@@ -57,7 +60,7 @@ requires_user_confirmation_for_next_step: true
 下一步只允许做：
 
 ```text
-准备 help-only execution confirmation package；仍不得执行。
+复审 help-only execution confirmation package；仍不得执行。
 ```
 
 部门复审结果：
@@ -66,7 +69,7 @@ requires_user_confirmation_for_next_step: true
 - 工程部：`approved_with_notes`
 - 记忆部：`approved_with_notes`
 - 汇总结论：允许准备 help-only execution confirmation package，不允许执行。
-- 候选包状态：已复审完成，等待准备执行前确认包。
+- 确认包状态：已准备，等待安全部、工程部、记忆部复审。
 
 ## 2. 必须解决的风险
 
@@ -344,7 +347,8 @@ next_step:
 - `go_prepare_help_only_candidate_package`: yes_with_notes
 - `help_only_candidate_review_completed`: yes
 - `go_prepare_execution_confirmation_package`: yes_with_notes
-- `next_action`: 准备 help-only execution confirmation package
+- `execution_confirmation_package_prepared`: yes
+- `next_action`: 复审 help-only execution confirmation package
 
 未来 `mano-cua --help` 的 go 条件：
 

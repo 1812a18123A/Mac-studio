@@ -33,6 +33,8 @@ related_runtime_gate_review:
   - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-runtime-gate-review_summary.md
 related_help_only_candidate_package:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Help_Only_Runtime_Candidate_Package.md
+related_help_only_candidate_review:
+  - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-help-only-candidate-review_summary.md
 ---
 
 # Mano-P PoC Checklist
@@ -124,7 +126,7 @@ Stage 0 结果：
 
 当前状态：
 
-- `help_only_candidate_package_prepared_waiting_review_or_execution_confirmation_package`
+- `help_only_candidate_review_completed_waiting_execution_confirmation_package`
 - 计划文件：`AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Isolated_Install_Plan.md`
 - 执行清单：`AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Execution_Checklist.md`
 - 元数据查询结果：`AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Metadata_Query_Result.md`
@@ -133,9 +135,10 @@ Stage 0 结果：
 - Runtime gate plan：`AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Runtime_Gate_Plan.md`
 - Runtime gate review：`AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-runtime-gate-review_summary.md`
 - Help-only runtime 候选包：`AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Help_Only_Runtime_Candidate_Package.md`
-- 已完成安装计划、执行清单、元数据查询、formula/dependency 审查、Python source 审查、runtime gate plan、部门复审和 help-only runtime 候选包；本轮未克隆、未安装、未运行、未下载模型、未授予权限。
-- 工程部和安全部均已只读审查，结论为 `approved_with_notes`。
-- 下一步如继续，只允许复审候选包或准备执行前确认包；仍不允许直接运行 `mano-cua`。
+- Help-only candidate review：`AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-help-only-candidate-review_summary.md`
+- 已完成安装计划、执行清单、元数据查询、formula/dependency 审查、Python source 审查、runtime gate plan、部门复审、help-only runtime 候选包和候选包复审；本轮未克隆、未安装、未运行、未下载模型、未授予权限。
+- 安全部、工程部、记忆部均已只读审查候选包，结论为 `approved_with_notes`。
+- 下一步如继续，只允许准备 help-only execution confirmation package；仍不允许直接运行 `mano-cua`。
 
 进入条件：
 

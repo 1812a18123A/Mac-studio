@@ -10,6 +10,8 @@ related_runtime_gate_plan:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Runtime_Gate_Plan.md
 related_runtime_gate_review:
   - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-runtime-gate-review_summary.md
+related_candidate_review:
+  - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-help-only-candidate-review_summary.md
 related_python_source_review:
   - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Python_Source_Review.md
 related_action_memory:
@@ -26,6 +28,8 @@ requires_user_confirmation_for_next_step: true
 当前结论：
 
 - `candidate_package_completed`: yes
+- `candidate_package_review_completed`: yes
+- `execution_confirmation_package_allowed`: yes_with_notes
 - `runtime_allowed`: no
 - `mano_cua_help_allowed`: no
 - `candidate_execution_allowed`: no
@@ -40,7 +44,7 @@ requires_user_confirmation_for_next_step: true
 下一步只允许：
 
 ```text
-让安全部、工程部、记忆部复核 help-only runtime 候选包。
+准备 help-only execution confirmation package。
 ```
 
 仍然禁止：
@@ -48,6 +52,13 @@ requires_user_confirmation_for_next_step: true
 ```text
 执行 /opt/homebrew/bin/mano-cua --help
 ```
+
+部门复审结果：
+
+- 安全部：`approved_with_notes`
+- 工程部：`approved_with_notes`
+- 记忆部：`approved_with_notes`
+- 汇总结论：允许准备 help-only execution confirmation package；仍不允许执行、创建 runner 文件、截图、GUI、cloud/local、install/download/tap 或读取配置值。
 
 ## 2. Scope
 
@@ -194,10 +205,11 @@ Runner behavior, to be implemented only after separate confirmation:
 - Run exact argv: `["/opt/homebrew/bin/mano-cua", "--help"]`.
 - Kill process on timeout.
 - Capture stdout/stderr in memory.
+- Enforce output size limits before summarization.
 - Emit only a redacted summary.
 - Exit with the child exit code unless a stop condition is hit.
 
-This package does not create the runner file and does not execute the runner.
+This package does not create the runner file and does not execute the runner. Any runner draft in the next confirmation package must remain pseudocode until separately reviewed.
 
 ## 8. Candidate Command Template
 
@@ -272,6 +284,7 @@ Before any future execution, record:
 - real user HOME config values are not read.
 - repository working tree is clean.
 - no runtime command has been executed yet.
+- pre-secret-scan rules are defined before execution.
 
 Allowed preflight command types:
 
@@ -334,6 +347,7 @@ Forbidden output storage:
 - session id
 - token-like strings
 - stack traces containing private paths
+- output beyond approved size limits
 
 If sensitive output appears:
 
@@ -364,18 +378,27 @@ Before future execution, create a new action memory with:
 
 ```text
 command_class: help-only
+confirmation_package_id:
 exact_binary:
+exact_binary_status:
 wrapper_target_summary:
 clean_home:
+clean_home_status:
 run_cwd:
+run_cwd_status:
 environment_allowlist:
+environment_allowlist_summary:
 timeout_seconds:
+redaction_policy:
+full_output_storage_allowed: false
+pre_secret_scan_required: true
 expected_network:
 expected_permissions:
 expected_gui:
 expected_writes:
 preflight_result:
 user_confirmation:
+user_confirmation_scope:
 safety_confirmation:
 engineering_confirmation:
 memory_confirmation:
@@ -383,8 +406,12 @@ actual_exit_code:
 actual_duration_ms:
 actual_output_summary:
 post_run_verification:
+post_verification_result:
 secret_scan_result:
+post_secret_scan_result:
 stop_condition_hit:
+sensitive_output_intercepted:
+department_confirmations:
 next_step:
 ```
 

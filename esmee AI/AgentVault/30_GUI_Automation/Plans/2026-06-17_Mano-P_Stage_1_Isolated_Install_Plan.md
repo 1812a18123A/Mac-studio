@@ -34,6 +34,8 @@ related_runtime_gate_review:
   - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-runtime-gate-review_summary.md
 related_help_only_candidate_package:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Help_Only_Runtime_Candidate_Package.md
+related_help_only_candidate_review:
+  - AgentVault/50_Memory/Department_Handoffs/real-v0-3-mano-p-help-only-candidate-review_summary.md
 related_action_memory:
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_19-50_gui-自动化部_mano-p-stage-1-install-plan.md
 notify_departments:
@@ -54,11 +56,13 @@ requires_user_confirmation: true
 
 - 工程部：`approved_with_notes`
 - 安全部：`approved_with_notes`
-- 总控结论：Stage 1 执行清单和用户确认包已补；Option B 元数据查询、formula/dependency 审查、Python source 审查、runtime gate plan、部门复审和 help-only runtime 候选包均已完成。仍不允许执行；下一步只能复审候选包或准备执行前确认包。
+- 总控结论：Stage 1 执行清单和用户确认包已补；Option B 元数据查询、formula/dependency 审查、Python source 审查、runtime gate plan、部门复审、help-only runtime 候选包和候选包复审均已完成。仍不允许执行；下一步只能准备 help-only execution confirmation package。
 
 当前状态：
 
-- `stage_1_status`: help_only_candidate_package_prepared_waiting_review_or_execution_confirmation_package
+- `stage_1_status`: help_only_candidate_review_completed_waiting_execution_confirmation_package
+- `help_only_candidate_review_completed`: yes
+- `execution_confirmation_package_allowed`: yes_with_notes
 - `clone_allowed`: no
 - `install_allowed`: no
 - `model_download_allowed`: no
@@ -339,4 +343,4 @@ AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Execution_Checklist
 - Option B 元数据查询已完成。
 - 未执行 `brew tap`、`brew install`、`mano-cua`、`clawhub`、下载、权限授权或 GUI 自动化。
 - 未授权任何安装、下载、权限或 GUI 自动化。
-- 下一步等待用户确认是否允许只读审查 Homebrew formula 内容和依赖树。
+- 下一步只允许准备 help-only execution confirmation package；仍不允许运行、安装、下载、截图、GUI、cloud/local 或读取配置值。

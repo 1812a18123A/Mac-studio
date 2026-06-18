@@ -7,6 +7,44 @@ task_id: writer-usage-docs
 status: completed
 risk_level: low
 current_mode: 坤-兑
+chinese_title: Obsidian 行动记忆写入器使用说明
+中文标题: Obsidian 行动记忆写入器使用说明
+summary_zh: 记录行动记忆 writer 的 README 使用说明补充，覆盖 create、append-log、uri、unittest 和帮助命令验证。
+中文摘要: 记录行动记忆 writer 的 README 使用说明补充，覆盖 create、append-log、uri、unittest 和帮助命令验证。
+directory_zh: 记忆库 / 行动日志 / 2026年06月17日
+目录中文路径: 记忆库 / 行动日志 / 2026年06月17日
+file_time_zh: 2026年06月17日 13点16分
+文件时间中文: 2026年06月17日 13点16分
+年份中文: 2026年
+月份中文: 06月
+日期中文: 17日
+时段中文: 下午
+status_zh: 已完成
+状态中文: 已完成
+risk_level_zh: 低
+风险中文: 低
+aliases:
+  - writer使用说明
+  - 行动记忆README
+  - Obsidian写入器用法
+search_keywords:
+  - Obsidian
+  - 行动记忆
+  - 使用说明
+  - README
+  - create
+  - append-log
+  - uri
+  - unittest
+检索元素:
+  - Obsidian
+  - 行动记忆
+  - 使用说明
+  - README
+  - create
+  - append-log
+  - uri
+  - unittest
 related_skills:
   - obsidian-memory
   - markdown-knowledge-base
@@ -22,6 +60,15 @@ requires_user_confirmation: false
 ---
 
 # 行动记忆：Obsidian 行动记忆写入器使用说明
+
+## 中文检索索引
+
+- 中文标题：Obsidian 行动记忆写入器使用说明
+- 中文摘要：记录行动记忆 writer 的 README 使用说明补充，覆盖 create、append-log、uri、unittest 和帮助命令验证。
+- 中文目录：记忆库 / 行动日志 / 2026年06月17日
+- 中文时间：2026年06月17日 13点16分，下午。
+- 相关部门：工程部、记忆部。
+- 中文关键词：Obsidian、行动记忆、使用说明、README、create、append-log、uri、unittest。
 
 ## 1. 用户目标
 

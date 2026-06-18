@@ -7,6 +7,44 @@ task_id: obsidian-memory-skill-sample
 status: completed
 risk_level: low
 current_mode: 坤-兑
+chinese_title: obsidian-memory skill 样本行动记忆
+中文标题: obsidian-memory skill 样本行动记忆
+summary_zh: 记录 obsidian-memory skill 草案的样本任务，用于验证标准行动记忆创建、append-log 追加日志和完成状态归档问题。
+中文摘要: 记录 obsidian-memory skill 草案的样本任务，用于验证标准行动记忆创建、append-log 追加日志和完成状态归档问题。
+directory_zh: 记忆库 / 行动日志 / 2026年06月17日
+目录中文路径: 记忆库 / 行动日志 / 2026年06月17日
+file_time_zh: 2026年06月17日 13点25分
+文件时间中文: 2026年06月17日 13点25分
+年份中文: 2026年
+月份中文: 06月
+日期中文: 17日
+时段中文: 下午
+status_zh: 已完成
+状态中文: 已完成
+risk_level_zh: 低
+风险中文: 低
+aliases:
+  - obsidian-memory样本任务
+  - skill样本行动记忆
+  - 行动记忆创建样本
+search_keywords:
+  - obsidian-memory
+  - 样本任务
+  - 行动记忆
+  - skill验证
+  - append-log
+  - completed
+  - 状态归档
+  - 样本文件
+检索元素:
+  - obsidian-memory
+  - 样本任务
+  - 行动记忆
+  - skill验证
+  - append-log
+  - completed
+  - 状态归档
+  - 样本文件
 related_skills:
   - obsidian-memory
 related_plugins:
@@ -19,6 +57,15 @@ requires_user_confirmation: false
 ---
 
 # 行动记忆：obsidian-memory skill 样本任务
+
+## 中文检索索引
+
+- 中文标题：obsidian-memory skill 样本行动记忆
+- 中文摘要：记录 obsidian-memory skill 草案的样本任务，用于验证标准行动记忆创建、append-log 追加日志和完成状态归档问题。
+- 中文目录：记忆库 / 行动日志 / 2026年06月17日
+- 中文时间：2026年06月17日 13点25分，下午。
+- 相关部门：记忆部、技能优化部。
+- 中文关键词：obsidian-memory、样本任务、行动记忆、skill 验证、append-log、completed、状态归档、样本文件。
 
 ## 1. 用户目标
 

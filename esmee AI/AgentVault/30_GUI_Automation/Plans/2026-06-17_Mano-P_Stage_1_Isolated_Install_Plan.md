@@ -26,6 +26,8 @@ related_metadata_result:
   - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Metadata_Query_Result.md
 related_formula_review:
   - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Formula_Dependency_Review.md
+related_python_source_review:
+  - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Python_Source_Review.md
 related_action_memory:
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_19-50_gui-自动化部_mano-p-stage-1-install-plan.md
 notify_departments:
@@ -46,11 +48,11 @@ requires_user_confirmation: true
 
 - 工程部：`approved_with_notes`
 - 安全部：`approved_with_notes`
-- 总控结论：Stage 1 执行清单和用户确认包已补；Option B 元数据查询已完成，发现 `mano-cua` 和 `Mininglamp-AI/tap` 已预先安装/存在。formula/dependency 只读审查已完成，发现 formula 安装阶段会执行 `pip install -r requirements.txt`，下一步只能等待用户确认是否只读审查 Python requirements 与 source entrypoint。
+- 总控结论：Stage 1 执行清单和用户确认包已补；Option B 元数据查询、formula/dependency 审查和 Python source 审查均已完成。source 审查发现默认 `run` 使用 cloud mode，runtime 可截图、打开 app/url、执行鼠标键盘动作、使用 bash capability，并可能读取 `$HOME/.mano/config.json`。下一步不能直接运行；只能等待用户确认是否编写 runtime gate plan。
 
 当前状态：
 
-- `stage_1_status`: formula_review_completed_waiting_python_source_review_confirmation
+- `stage_1_status`: python_source_review_completed_waiting_runtime_gate_plan_confirmation
 - `clone_allowed`: no
 - `install_allowed`: no
 - `model_download_allowed`: no

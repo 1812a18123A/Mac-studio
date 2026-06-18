@@ -12,6 +12,8 @@ related_install_plan:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Isolated_Install_Plan.md
 related_metadata_result:
   - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Metadata_Query_Result.md
+related_python_source_review:
+  - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Python_Source_Review.md
 related_action_memory:
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_21-33_gui-自动化部_mano-p-formula-review.md
 requires_user_confirmation_for_next_step: true
@@ -189,10 +191,16 @@ Interpretation:
 
 Stage 1 should not proceed to runtime yet.
 
+Completed follow-up:
+
+```text
+Python requirements and source entrypoints have been reviewed.
+```
+
 Recommended next step:
 
 ```text
-Only inspect Python requirements and source entrypoints.
+Write a runtime gate plan before any command execution.
 ```
 
 Minimum next read-only scope:

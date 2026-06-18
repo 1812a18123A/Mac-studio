@@ -6,6 +6,32 @@ owner_department: GUI 自动化部
 status: completed
 risk_level: high
 current_mode: 坤-坎-艮-兑
+chinese_title: Mano-P help-only 运行候选包
+中文标题: Mano-P help-only 运行候选包
+summary_zh: 记录 Mano-P `mano-cua --help` 的只读运行候选包，包括 wrapper 路径、clean HOME、RUN_CWD、环境白名单、timeout、脱敏和禁止事项；当前不授权执行。
+中文摘要: 记录 Mano-P `mano-cua --help` 的只读运行候选包，包括 wrapper 路径、clean HOME、RUN_CWD、环境白名单、timeout、脱敏和禁止事项；当前不授权执行。
+aliases:
+  - help-only运行候选包
+  - mano-cua帮助命令候选
+  - Mano-P运行候选包
+search_keywords:
+  - Mano-P
+  - mano-cua
+  - help-only
+  - 运行候选包
+  - wrapper路径
+  - clean HOME
+  - timeout
+  - 不授权执行
+检索元素:
+  - Mano-P
+  - mano-cua
+  - help-only
+  - 运行候选包
+  - wrapper路径
+  - clean HOME
+  - timeout
+  - 不授权执行
 related_runtime_gate_plan:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Runtime_Gate_Plan.md
 related_runtime_gate_review:
@@ -22,6 +48,13 @@ requires_user_confirmation_for_next_step: true
 ---
 
 # Mano-P Stage 1 Help-only Runtime Candidate Package
+
+## 中文检索索引
+
+- 中文标题：Mano-P help-only 运行候选包
+- 中文摘要：记录 Mano-P `mano-cua --help` 的只读运行候选包，包括 wrapper 路径、clean HOME、RUN_CWD、环境白名单、timeout、脱敏和禁止事项；当前不授权执行。
+- 相关部门：GUI 自动化部、安全部、工程部、记忆部。
+- 中文关键词：Mano-P、mano-cua、help-only、运行候选包、wrapper 路径、clean HOME、timeout、不授权执行。
 
 ## 1. Candidate 结论
 

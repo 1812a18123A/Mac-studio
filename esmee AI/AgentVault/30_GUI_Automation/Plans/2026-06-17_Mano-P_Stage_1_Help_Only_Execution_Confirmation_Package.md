@@ -7,6 +7,32 @@ owner_department: GUI 自动化部
 status: prepared_waiting_department_review
 risk_level: high
 current_mode: 坎-艮-兑
+chinese_title: Mano-P help-only 执行确认包
+中文标题: Mano-P help-only 执行确认包
+summary_zh: 记录 Mano-P help-only 候选执行的确认包边界、伪代码 runner、clean HOME、环境白名单、输出脱敏和停止条件；当前不是执行授权。
+中文摘要: 记录 Mano-P help-only 候选执行的确认包边界、伪代码 runner、clean HOME、环境白名单、输出脱敏和停止条件；当前不是执行授权。
+aliases:
+  - help-only执行确认包
+  - Mano-P执行前确认
+  - mano-cua帮助命令确认包
+search_keywords:
+  - Mano-P
+  - help-only
+  - 执行确认包
+  - runner伪代码
+  - clean HOME
+  - 环境白名单
+  - 输出脱敏
+  - 停止条件
+检索元素:
+  - Mano-P
+  - help-only
+  - 执行确认包
+  - runner伪代码
+  - clean HOME
+  - 环境白名单
+  - 输出脱敏
+  - 停止条件
 related_runtime_gate_plan:
   - AgentVault/30_GUI_Automation/Plans/2026-06-17_Mano-P_Stage_1_Runtime_Gate_Plan.md
 related_candidate_package:
@@ -22,6 +48,13 @@ runner_file_creation_authorized: false
 ---
 
 # Mano-P Stage 1 Help-only Execution Confirmation Package
+
+## 中文检索索引
+
+- 中文标题：Mano-P help-only 执行确认包
+- 中文摘要：记录 Mano-P help-only 候选执行的确认包边界、伪代码 runner、clean HOME、环境白名单、输出脱敏和停止条件；当前不是执行授权。
+- 相关部门：GUI 自动化部、安全部、工程部、记忆部。
+- 中文关键词：Mano-P、help-only、执行确认包、runner 伪代码、clean HOME、环境白名单、输出脱敏、停止条件。
 
 重要：本确认包仍不是执行授权。它只用于下一轮安全部、工程部、记忆部复审和用户确认；当前不允许创建 runner 文件，也不允许执行 `/opt/homebrew/bin/mano-cua --help`。
 

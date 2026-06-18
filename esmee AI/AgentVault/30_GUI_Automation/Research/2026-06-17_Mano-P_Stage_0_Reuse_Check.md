@@ -6,6 +6,32 @@ owner_department: GUI 自动化部
 status: completed
 risk_level: medium
 current_mode: 坤-兑
+chinese_title: Mano-P Stage 0 复用检查
+中文标题: Mano-P Stage 0 复用检查
+summary_zh: 记录 Mano-P 作为 GUI 自动化参考项目和受控 PoC 候选的只读复用检查结论、许可证判断、供应链入口、local/cloud 模式和最小 adapter 候选边界。
+中文摘要: 记录 Mano-P 作为 GUI 自动化参考项目和受控 PoC 候选的只读复用检查结论、许可证判断、供应链入口、local/cloud 模式和最小 adapter 候选边界。
+aliases:
+  - Mano-P复用检查
+  - GUI自动化复用研究
+  - Stage0只读研究
+search_keywords:
+  - Mano-P
+  - Stage 0
+  - 复用检查
+  - GUI自动化
+  - Local Mode
+  - Cloud Mode
+  - 供应链
+  - adapter草案
+检索元素:
+  - Mano-P
+  - Stage 0
+  - 复用检查
+  - GUI自动化
+  - Local Mode
+  - Cloud Mode
+  - 供应链
+  - adapter草案
 source_project:
   - https://github.com/Mininglamp-AI/Mano-P
 source_readme:
@@ -25,6 +51,13 @@ related_action_memory:
 ---
 
 # Mano-P Stage 0 Reuse Check
+
+## 中文检索索引
+
+- 中文标题：Mano-P Stage 0 复用检查
+- 中文摘要：记录 Mano-P 作为 GUI 自动化参考项目和受控 PoC 候选的只读复用检查结论、许可证判断、供应链入口、local/cloud 模式和最小 adapter 候选边界。
+- 相关部门：GUI 自动化部、工程部、安全部、记忆部、技能优化部。
+- 中文关键词：Mano-P、Stage 0、复用检查、GUI 自动化、Local Mode、Cloud Mode、供应链、adapter 草案。
 
 ## 1. 一句话结论
 

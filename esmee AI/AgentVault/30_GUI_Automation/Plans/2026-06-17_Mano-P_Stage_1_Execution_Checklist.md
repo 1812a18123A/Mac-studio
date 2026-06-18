@@ -6,6 +6,30 @@ owner_department: GUI 自动化部
 status: waiting_user_confirmation
 risk_level: medium
 current_mode: 乾-坎-艮
+chinese_title: Mano-P Stage 1 执行清单
+中文标题: Mano-P Stage 1 执行清单
+summary_zh: 记录 Mano-P Stage 1 从隔离安装计划到 help-only execution confirmation package 的执行前清单、当前状态、禁止事项和用户确认要求。
+中文摘要: 记录 Mano-P Stage 1 从隔离安装计划到 help-only execution confirmation package 的执行前清单、当前状态、禁止事项和用户确认要求。
+aliases:
+  - Mano-P执行清单
+  - Stage1执行前清单
+  - help-only确认链路
+search_keywords:
+  - Mano-P
+  - Stage 1
+  - 执行清单
+  - help-only
+  - 用户确认
+  - 运行门禁
+  - 禁止执行
+检索元素:
+  - Mano-P
+  - Stage 1
+  - 执行清单
+  - help-only
+  - 用户确认
+  - 运行门禁
+  - 禁止执行
 source_project:
   - https://github.com/Mininglamp-AI/Mano-P
 source_readme:
@@ -40,6 +64,13 @@ requires_user_confirmation: true
 ---
 
 # Mano-P Stage 1 Execution Checklist
+
+## 中文检索索引
+
+- 中文标题：Mano-P Stage 1 执行清单
+- 中文摘要：记录 Mano-P Stage 1 从隔离安装计划到 help-only execution confirmation package 的执行前清单、当前状态、禁止事项和用户确认要求。
+- 相关部门：GUI 自动化部、工程部、安全部、记忆部。
+- 中文关键词：Mano-P、Stage 1、执行清单、help-only、用户确认、运行门禁、禁止执行。
 
 ## 1. 当前结论
 

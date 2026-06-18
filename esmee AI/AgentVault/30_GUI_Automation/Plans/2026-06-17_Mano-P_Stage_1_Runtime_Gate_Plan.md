@@ -6,6 +6,32 @@ owner_department: GUI 自动化部
 status: completed
 risk_level: high
 current_mode: 坤-坎-艮-兑
+chinese_title: Mano-P Stage 1 运行门禁计划
+中文标题: Mano-P Stage 1 运行门禁计划
+summary_zh: 定义 Mano-P runtime 前必须通过的门禁，明确 help-only、clean HOME、环境隔离、命令白名单、停止条件和禁止 GUI/cloud/runtime 动作。
+中文摘要: 定义 Mano-P runtime 前必须通过的门禁，明确 help-only、clean HOME、环境隔离、命令白名单、停止条件和禁止 GUI/cloud/runtime 动作。
+aliases:
+  - Mano-P运行门禁
+  - runtime gate
+  - help-only门禁
+search_keywords:
+  - Mano-P
+  - 运行门禁
+  - runtime gate
+  - help-only
+  - clean HOME
+  - env隔离
+  - 禁止GUI
+  - 禁止cloud
+检索元素:
+  - Mano-P
+  - 运行门禁
+  - runtime gate
+  - help-only
+  - clean HOME
+  - env隔离
+  - 禁止GUI
+  - 禁止cloud
 related_python_source_review:
   - AgentVault/30_GUI_Automation/Research/2026-06-17_Mano-P_Stage_1_Python_Source_Review.md
 related_formula_review:
@@ -30,6 +56,13 @@ requires_user_confirmation_for_next_step: true
 ---
 
 # Mano-P Stage 1 Runtime Gate Plan
+
+## 中文检索索引
+
+- 中文标题：Mano-P Stage 1 运行门禁计划
+- 中文摘要：定义 Mano-P runtime 前必须通过的门禁，明确 help-only、clean HOME、环境隔离、命令白名单、停止条件和禁止 GUI/cloud/runtime 动作。
+- 相关部门：GUI 自动化部、安全部、工程部、记忆部。
+- 中文关键词：Mano-P、运行门禁、runtime gate、help-only、clean HOME、env 隔离、禁止 GUI、禁止 cloud。
 
 ## 1. Gate 结论
 

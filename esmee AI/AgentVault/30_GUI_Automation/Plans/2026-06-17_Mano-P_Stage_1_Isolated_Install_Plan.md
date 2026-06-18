@@ -6,6 +6,32 @@ owner_department: GUI 自动化部
 status: waiting_user_confirmation
 risk_level: medium
 current_mode: 乾-坎-艮
+chinese_title: Mano-P Stage 1 隔离安装计划
+中文标题: Mano-P Stage 1 隔离安装计划
+summary_zh: 定义 Mano-P Stage 1 隔离安装验证的目标、官方入口、禁止事项、隔离目录、命令候选、权限边界、网络边界和下一步限制。
+中文摘要: 定义 Mano-P Stage 1 隔离安装验证的目标、官方入口、禁止事项、隔离目录、命令候选、权限边界、网络边界和下一步限制。
+aliases:
+  - Mano-P隔离安装计划
+  - Stage1安装计划
+  - GUI自动化隔离验证
+search_keywords:
+  - Mano-P
+  - Stage 1
+  - 隔离安装
+  - Homebrew
+  - 权限边界
+  - cloud mode
+  - GUI自动化
+  - 用户确认
+检索元素:
+  - Mano-P
+  - Stage 1
+  - 隔离安装
+  - Homebrew
+  - 权限边界
+  - cloud mode
+  - GUI自动化
+  - 用户确认
 source_project:
   - https://github.com/Mininglamp-AI/Mano-P
 source_readme:
@@ -49,6 +75,13 @@ requires_user_confirmation: true
 ---
 
 # Mano-P Stage 1 Isolated Install Plan
+
+## 中文检索索引
+
+- 中文标题：Mano-P Stage 1 隔离安装计划
+- 中文摘要：定义 Mano-P Stage 1 隔离安装验证的目标、官方入口、禁止事项、隔离目录、命令候选、权限边界、网络边界和下一步限制。
+- 相关部门：GUI 自动化部、工程部、安全部、记忆部。
+- 中文关键词：Mano-P、Stage 1、隔离安装、Homebrew、权限边界、cloud mode、GUI 自动化、用户确认。
 
 ## 1. 计划结论
 

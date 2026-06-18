@@ -6,6 +6,30 @@ owner_department: 总控办公室
 status: active
 risk_level: medium
 current_mode: 坤-兑
+chinese_title: 部门工作流 v0.2
+中文标题: 部门工作流 v0.2
+summary_zh: 定义 esmee AI 多部门协作的标准任务循环、确认规则、Git 工作流、部门交接模板和完成标准。
+中文摘要: 定义 esmee AI 多部门协作的标准任务循环、确认规则、Git 工作流、部门交接模板和完成标准。
+aliases:
+  - 多部门协作流程
+  - 部门工作流
+  - 任务循环规则
+search_keywords:
+  - 部门工作流
+  - 多部门协作
+  - 任务循环
+  - 用户确认
+  - Git工作流
+  - 部门交接
+  - 完成标准
+检索元素:
+  - 部门工作流
+  - 多部门协作
+  - 任务循环
+  - 用户确认
+  - Git工作流
+  - 部门交接
+  - 完成标准
 related_action_memory:
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_17-14_总控办公室_implement-v0-2-repository-policy-workflow.md
 related_policy:
@@ -19,6 +43,13 @@ related_departments:
 ---
 
 # Department Workflow v0.2
+
+## 中文检索索引
+
+- 中文标题：部门工作流 v0.2
+- 中文摘要：定义 esmee AI 多部门协作的标准任务循环、确认规则、Git 工作流、部门交接模板和完成标准。
+- 相关部门：总控办公室、工程部、记忆部、安全部、技能优化部。
+- 中文关键词：部门工作流、多部门协作、任务循环、用户确认、Git 工作流、部门交接、完成标准。
 
 本文件把 v0.1 的行动记忆链路升级为可复用的多部门协作模板。它不引入自动化调度系统，只定义每次任务如何判断、记录、执行和交接。
 
@@ -128,4 +159,3 @@ related_departments:
 ## 7. v0.2 使用方式
 
 从 v0.2 起，每次任务默认先使用此模板做轻量判断。若任务很小，可以只在行动记忆中简短记录；若跨部门、涉及权限或要入库，则必须完整走本文件流程。
-

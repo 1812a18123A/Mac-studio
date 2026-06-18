@@ -1,4 +1,43 @@
+---
+type: engineering_tool_readme
+status: active
+owner_department: 工程部
+date: 2026-06-17
+current_mode: 坤-兑
+chinese_title: Obsidian 行动记忆工具说明
+中文标题: Obsidian 行动记忆工具说明
+summary_zh: 说明 Obsidian 行动记忆写入器和中文检索只读审计脚本的使用方式、验证命令和安全边界。
+中文摘要: 说明 Obsidian 行动记忆写入器和中文检索只读审计脚本的使用方式、验证命令和安全边界。
+aliases:
+  - 行动记忆写入器说明
+  - 中文检索审计脚本说明
+  - 工程工具说明
+search_keywords:
+  - 行动记忆写入器
+  - 中文检索审计
+  - Obsidian工具
+  - append-log
+  - set-status
+  - uri
+  - unittest
+检索元素:
+  - 行动记忆写入器
+  - 中文检索审计
+  - Obsidian工具
+  - append-log
+  - set-status
+  - uri
+  - unittest
+---
+
 # Obsidian Action Memory Writer
+
+## 中文检索索引
+
+- 中文标题：Obsidian 行动记忆工具说明
+- 中文摘要：说明 Obsidian 行动记忆写入器和中文检索只读审计脚本的使用方式、验证命令和安全边界。
+- 相关部门：工程部、记忆部、技能优化部。
+- 中文关键词：行动记忆写入器、中文检索审计、Obsidian 工具、append-log、set-status、uri、unittest。
 
 最小本地 adapter，用 Python 标准库把行动记忆写入 Obsidian vault。
 

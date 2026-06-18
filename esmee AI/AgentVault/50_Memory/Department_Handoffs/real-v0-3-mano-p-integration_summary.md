@@ -6,6 +6,30 @@ owner_department: 总控办公室
 status: completed
 risk_level: medium
 current_mode: 坤-兑
+chinese_title: Mano-P 接入讨论汇总
+中文标题: Mano-P 接入讨论汇总
+summary_zh: 汇总多部门对 Mininglamp-AI/Mano-P 是否直接接入 esmee AI 的判断，结论是作为 GUI 自动化参考项目和受控 PoC 候选，不直接成为主系统依赖。
+中文摘要: 汇总多部门对 Mininglamp-AI/Mano-P 是否直接接入 esmee AI 的判断，结论是作为 GUI 自动化参考项目和受控 PoC 候选，不直接成为主系统依赖。
+aliases:
+  - Mano-P接入讨论
+  - GUI自动化参考项目
+  - Mano-P受控PoC
+search_keywords:
+  - Mano-P
+  - GUI自动化
+  - 受控PoC
+  - 参考项目
+  - 本地优先
+  - cloud mode
+  - 安全边界
+检索元素:
+  - Mano-P
+  - GUI自动化
+  - 受控PoC
+  - 参考项目
+  - 本地优先
+  - cloud mode
+  - 安全边界
 reference_project:
   - https://github.com/Mininglamp-AI/Mano-P
 related_action_memory:
@@ -19,6 +43,13 @@ related_results:
 ---
 
 # 讨论汇总：Mano-P 是否直接接入 esmee AI
+
+## 中文检索索引
+
+- 中文标题：Mano-P 接入讨论汇总
+- 中文摘要：汇总多部门对 Mininglamp-AI/Mano-P 是否直接接入 esmee AI 的判断，结论是作为 GUI 自动化参考项目和受控 PoC 候选，不直接成为主系统依赖。
+- 相关部门：GUI 自动化部、工程部、安全部、记忆部、技能优化部、总控办公室。
+- 中文关键词：Mano-P、GUI 自动化、受控 PoC、参考项目、本地优先、cloud mode、安全边界。
 
 ## 1. 讨论问题
 

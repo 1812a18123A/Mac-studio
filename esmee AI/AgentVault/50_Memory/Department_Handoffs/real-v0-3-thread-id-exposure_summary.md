@@ -6,6 +6,30 @@ owner_department: 总控办公室
 status: completed
 risk_level: medium
 current_mode: 坤-兑
+chinese_title: 内部调度标识外发边界讨论汇总
+中文标题: 内部调度标识外发边界讨论汇总
+summary_zh: 汇总多部门对真实 Codex thread id 是否应写入远端正式资产的判断，结论是正式资产使用别名，真实映射放入本地私有区。
+中文摘要: 汇总多部门对真实 Codex thread id 是否应写入远端正式资产的判断，结论是正式资产使用别名，真实映射放入本地私有区。
+aliases:
+  - thread id外发边界
+  - 内部调度元数据脱敏
+  - 部门线程注册表修复
+search_keywords:
+  - 内部调度标识
+  - thread id
+  - 脱敏
+  - 私有注册表
+  - 远端正式资产
+  - 安全部
+  - 记忆部
+检索元素:
+  - 内部调度标识
+  - thread id
+  - 脱敏
+  - 私有注册表
+  - 远端正式资产
+  - 安全部
+  - 记忆部
 related_action_memory:
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_18-32_总控办公室_department-discuss-thread-id-exposure.md
 related_results:
@@ -17,6 +41,13 @@ related_results:
 ---
 
 # 讨论汇总：真实 thread id 外发边界
+
+## 中文检索索引
+
+- 中文标题：内部调度标识外发边界讨论汇总
+- 中文摘要：汇总多部门对真实 Codex thread id 是否应写入远端正式资产的判断，结论是正式资产使用别名，真实映射放入本地私有区。
+- 相关部门：总控办公室、安全部、记忆部、工程部、技能优化部、GUI 自动化部。
+- 中文关键词：内部调度标识、thread id、脱敏、私有注册表、远端正式资产、安全部、记忆部。
 
 ## 1. 讨论问题
 

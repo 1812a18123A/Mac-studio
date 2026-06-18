@@ -6,6 +6,30 @@ owner_department: GUI 自动化部
 status: reference_active
 risk_level: medium
 current_mode: 坤-兑
+chinese_title: Mano-P GUI 自动化参考
+中文标题: Mano-P GUI 自动化参考
+summary_zh: 记录 Mano-P 作为 esmee AI GUI 自动化路线参考项目和 PoC 候选的定位、来源、可借鉴能力、边界、安全风险和 PoC 前置条件。
+中文摘要: 记录 Mano-P 作为 esmee AI GUI 自动化路线参考项目和 PoC 候选的定位、来源、可借鉴能力、边界、安全风险和 PoC 前置条件。
+aliases:
+  - GUI参考Mano-P
+  - Mano-P参考项目
+  - GUI自动化PoC候选
+search_keywords:
+  - Mano-P
+  - GUI自动化
+  - GUI-VLA
+  - think-act-verify
+  - Local Mode
+  - Cloud Mode
+  - PoC前置条件
+检索元素:
+  - Mano-P
+  - GUI自动化
+  - GUI-VLA
+  - think-act-verify
+  - Local Mode
+  - Cloud Mode
+  - PoC前置条件
 source_project:
   - https://github.com/Mininglamp-AI/Mano-P
 source_readme:
@@ -20,6 +44,13 @@ related_discussion_summary:
 ---
 
 # GUI Reference: Mano-P
+
+## 中文检索索引
+
+- 中文标题：Mano-P GUI 自动化参考
+- 中文摘要：记录 Mano-P 作为 esmee AI GUI 自动化路线参考项目和 PoC 候选的定位、来源、可借鉴能力、边界、安全风险和 PoC 前置条件。
+- 相关部门：GUI 自动化部、工程部、安全部、记忆部、技能优化部。
+- 中文关键词：Mano-P、GUI 自动化、GUI-VLA、think-act-verify、Local Mode、Cloud Mode、PoC 前置条件。
 
 ## 1. 定位
 

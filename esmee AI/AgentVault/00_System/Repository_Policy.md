@@ -6,6 +6,30 @@ owner_department: 总控办公室
 status: active
 risk_level: medium
 current_mode: 坤-兑
+chinese_title: AgentVault 仓库策略 v0.2
+中文标题: AgentVault 仓库策略 v0.2
+summary_zh: 定义 AgentVault 中哪些资料可以作为正式仓库资产、哪些资料默认本地保留，以及提交前的安全检查规则。
+中文摘要: 定义 AgentVault 中哪些资料可以作为正式仓库资产、哪些资料默认本地保留，以及提交前的安全检查规则。
+aliases:
+  - 仓库策略
+  - Git收纳边界
+  - AgentVault版本控制规则
+search_keywords:
+  - 仓库策略
+  - Git提交
+  - 正式资产
+  - 私有资料
+  - 敏感信息
+  - 提交前检查
+  - 远端推送
+检索元素:
+  - 仓库策略
+  - Git提交
+  - 正式资产
+  - 私有资料
+  - 敏感信息
+  - 提交前检查
+  - 远端推送
 related_action_memory:
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_17-14_总控办公室_implement-v0-2-repository-policy-workflow.md
   - AgentVault/50_Memory/Action_Logs/2026-06-17/2026-06-17_19-02_总控办公室_redact-thread-id-registry-forward-fix.md
@@ -19,6 +43,13 @@ related_departments:
 ---
 
 # AgentVault Repository Policy v0.2
+
+## 中文检索索引
+
+- 中文标题：AgentVault 仓库策略 v0.2
+- 中文摘要：定义 AgentVault 中哪些资料可以作为正式仓库资产、哪些资料默认本地保留，以及提交前的安全检查规则。
+- 相关部门：总控办公室、工程部、记忆部、安全部。
+- 中文关键词：仓库策略、Git 提交、正式资产、私有资料、敏感信息、提交前检查、远端推送。
 
 本文件定义 esmee AI vault 中哪些资料属于正式仓库资产，哪些资料默认只保留在本地 Obsidian。目标是减少误提交、保护私人资料，并让 AgentVault 的版本历史保持可审计。
 
